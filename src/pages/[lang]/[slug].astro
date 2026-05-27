@@ -1,0 +1,571 @@
+---
+import { insurancePages } from "../../data/insurancePages.js";
+
+export function getStaticPaths() {
+return insurancePages.map((page) => ({
+params: { lang: page.lang, slug: page.slug },
+props: { page },
+}));
+}
+
+const { page } = Astro.props;
+
+const phoneClean = page.phone.replace(/\s/g, "");
+const telUrl = `tel:${phoneClean}`;
+const whatsappUrl = `https://wa.me/${phoneClean.replace("+", "")}?text=${encodeURIComponent(page.whatsappText)}`;
+---
+
+<html lang={page.lang}>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{page.title} | {page.officeName}</title>
+  <meta name="description" content={page.subtitle} />
+</head>
+
+<body>
+<main>
+  <header class="site-header">
+    <a href="/" class="logo-area">
+      <img src="/logos/mapfre.svg" alt="MAPFRE" />
+      <span>{page.officeName}</span>
+    </a>
+
+    <nav class="header-actions">
+      <a href={telUrl} class="btn btn-red">Llamanos {page.phone}</a>
+      <a href={whatsappUrl} class="btn btn-outline">WhatsApp</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">{page.officeMessage}</p>
+
+      <h1>{page.title}</h1>
+
+      <p class="subtitle">{page.subtitle}</p>
+
+      <div class="hero-buttons">
+        <a href={telUrl} class="btn btn-red large">Llamanos {page.phone}</a>
+        <a href={whatsappUrl} class="btn btn-outline large">WhatsApp</a>
+      </div>
+
+      <div class="trust-list">
+        {page.trust.map((item) => <span>{item}</span>)}
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <div class="image-wrap">
+        <img src="/images/hero.jpg" alt="Vida en Tenerife" />
+      </div>
+
+      <div class="quote-box">
+        <p>{page.cardTitle}</p>
+        <h2>{page.type}</h2>
+
+        <ul>
+          {page.benefits.map((benefit) => (
+          <li>
+            <span>✓</span>
+            {benefit}
+          </li>
+          ))}
+        </ul>
+
+        <a href={telUrl} class="btn btn-red full">Llamanos</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="office-info">
+    <div>
+      <span>{page.officeLabel}</span>
+      <strong>{page.officeName}</strong>
+    </div>
+
+    <div>
+      <span>{page.addressLabel}</span>
+      <strong>{page.address}</strong>
+    </div>
+
+    <div>
+      <span>{page.phoneLabel}</span>
+      <strong>{page.phone}</strong>
+    </div>
+  </section>
+
+  <section class="benefits">
+    <div class="section-title">
+      <span>{page.sectionLabel}</span>
+      <h2>{page.sectionTitle}</h2>
+    </div>
+
+    <div class="benefit-grid">
+      {page.cards.map((card) => (
+      <article>
+        <span class="number">{card.number}</span>
+        <h3>{card.title}</h3>
+        <p>{card.text}</p>
+      </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="final-cta">
+    <div>
+      <span>{page.officeName}</span>
+      <h2>{page.finalTitle}</h2>
+      <p>{page.finalText}</p>
+    </div>
+
+    <div class="final-actions">
+      <a href={telUrl} class="btn btn-white">Llamanos {page.phone}</a>
+      <a href={whatsappUrl} class="btn btn-ghost">WhatsApp</a>
+    </div>
+  </section>
+</main>
+</body>
+</html>
+
+<style>
+  :root {
+    --red: #e30613;
+    --red-dark: #c90012;
+    --black: #101114;
+    --text: #303742;
+    --muted: #687381;
+    --soft: #f6f6f6;
+    --line: #e9e9e9;
+    --white: #ffffff;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--black);
+    background: var(--soft);
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .site-header {
+    height: 86px;
+    padding: 0 7vw;
+    background: var(--white);
+    border-bottom: 1px solid var(--line);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  .logo-area {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    color: var(--black);
+    font-weight: 900;
+    font-size: 20px;
+  }
+
+  .logo-area img {
+    width: 150px;
+    height: auto;
+    display: block;
+  }
+
+  .logo-area span {
+    border-left: 1px solid #ddd;
+    padding-left: 22px;
+    white-space: nowrap;
+  }
+
+  .header-actions,
+  .hero-buttons,
+  .final-actions {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    min-height: 52px;
+    padding: 0 24px;
+    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 15px;
+    transition: transform .2s ease, box-shadow .2s ease;
+  }
+
+  .btn:hover {
+    transform: translateY(-1px);
+  }
+
+  .btn-red {
+    background: var(--red);
+    color: white;
+    box-shadow: 0 14px 32px rgba(227, 6, 19, .22);
+  }
+
+  .btn-outline {
+    color: var(--red);
+    background: white;
+    border: 2px solid var(--red);
+  }
+
+  .btn-white {
+    background: white;
+    color: var(--red);
+  }
+
+  .btn-ghost {
+    color: white;
+    border: 2px solid rgba(255,255,255,.55);
+  }
+
+  .btn.large {
+    min-height: 62px;
+    padding: 0 30px;
+  }
+
+  .btn.full {
+    width: 100%;
+  }
+
+  .hero {
+    min-height: calc(100vh - 86px);
+    padding: 90px 7vw 110px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 520px;
+    gap: 72px;
+    align-items: center;
+    background:
+            radial-gradient(circle at 90% 10%, rgba(227, 6, 19, .12), transparent 32%),
+            linear-gradient(135deg, #fff 0%, #f7f7f7 100%);
+  }
+
+  .hero-copy {
+    max-width: 780px;
+  }
+
+  .eyebrow {
+    margin: 0 0 24px;
+    color: var(--red);
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: clamp(52px, 6vw, 86px);
+    line-height: .94;
+    letter-spacing: -4px;
+    max-width: 760px;
+  }
+
+  .subtitle {
+    margin: 28px 0 0;
+    max-width: 680px;
+    color: var(--muted);
+    font-size: 21px;
+    line-height: 1.55;
+  }
+
+  .hero-buttons {
+    margin-top: 38px;
+  }
+
+  .trust-list {
+    margin-top: 34px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .trust-list span {
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 13px 17px;
+    color: #4f5966;
+    font-weight: 800;
+    font-size: 14px;
+  }
+
+  .hero-card {
+    background: white;
+    border-radius: 36px;
+    padding: 18px;
+    box-shadow: 0 34px 90px rgba(0,0,0,.12);
+  }
+
+  .image-wrap {
+    height: 300px;
+    border-radius: 26px;
+    overflow: hidden;
+    background: #eee;
+  }
+
+  .image-wrap img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .quote-box {
+    padding: 30px 22px 10px;
+  }
+
+  .quote-box p {
+    margin: 0;
+    color: #7a828c;
+    font-size: 14px;
+  }
+
+  .quote-box h2 {
+    margin: 4px 0 24px;
+    font-size: 34px;
+    line-height: 1;
+  }
+
+  .quote-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px;
+    display: grid;
+    gap: 12px;
+  }
+
+  .quote-box li {
+    background: #f3f3f3;
+    border-radius: 15px;
+    padding: 15px 16px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-weight: 800;
+  }
+
+  .quote-box li span {
+    color: var(--red);
+    font-weight: 900;
+  }
+
+  .office-info {
+    width: calc(100% - 14vw);
+    margin: -42px auto 0;
+    position: relative;
+    z-index: 3;
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 28px;
+    padding: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1.7fr 1fr;
+    gap: 18px;
+    box-shadow: 0 22px 55px rgba(0,0,0,.08);
+  }
+
+  .office-info div {
+    padding: 10px 14px;
+  }
+
+  .office-info span {
+    display: block;
+    color: var(--red);
+    font-weight: 900;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  .office-info strong {
+    display: block;
+    color: var(--text);
+    line-height: 1.45;
+    font-size: 16px;
+  }
+
+  .benefits {
+    padding: 100px 7vw 76px;
+  }
+
+  .section-title span {
+    display: block;
+    color: var(--red);
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  .section-title h2 {
+    margin: 0 0 44px;
+    max-width: 900px;
+    font-size: clamp(38px, 4.5vw, 62px);
+    line-height: 1;
+    letter-spacing: -2px;
+  }
+
+  .benefit-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .benefit-grid article {
+    background: white;
+    border-radius: 28px;
+    padding: 34px;
+    min-height: 230px;
+    box-shadow: 0 16px 38px rgba(0,0,0,.045);
+  }
+
+  .number {
+    color: var(--red);
+    font-weight: 900;
+    font-size: 18px;
+  }
+
+  .benefit-grid h3 {
+    margin: 26px 0 16px;
+    font-size: 28px;
+  }
+
+  .benefit-grid p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 17px;
+    line-height: 1.65;
+  }
+
+  .final-cta {
+    margin: 24px 7vw 86px;
+    border-radius: 34px;
+    padding: 56px;
+    background: var(--red-dark);
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 32px;
+    align-items: center;
+  }
+
+  .final-cta span {
+    font-size: 14px;
+    font-weight: 900;
+    opacity: .85;
+    text-transform: uppercase;
+  }
+
+  .final-cta h2 {
+    margin: 12px 0 14px;
+    font-size: clamp(34px, 4vw, 56px);
+    line-height: 1;
+  }
+
+  .final-cta p {
+    margin: 0;
+    max-width: 640px;
+    color: rgba(255,255,255,.82);
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 1100px) {
+    .site-header {
+      height: auto;
+      padding: 22px 6vw;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    .hero {
+      grid-template-columns: 1fr;
+      padding: 72px 6vw 98px;
+    }
+
+    .hero-card {
+      max-width: 560px;
+    }
+
+    .office-info,
+    .benefit-grid,
+    .final-cta {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 680px) {
+    .logo-area {
+      gap: 14px;
+    }
+
+    .logo-area img {
+      width: 125px;
+    }
+
+    .logo-area span {
+      padding-left: 14px;
+      white-space: normal;
+      font-size: 16px;
+    }
+
+    .header-actions,
+    .hero-buttons,
+    .final-actions {
+      width: 100%;
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .btn {
+      width: 100%;
+    }
+
+    .hero {
+      padding: 56px 24px 86px;
+    }
+
+    h1 {
+      font-size: 46px;
+      letter-spacing: -2px;
+    }
+
+    .subtitle {
+      font-size: 18px;
+    }
+
+    .image-wrap {
+      height: 240px;
+    }
+
+    .office-info {
+      width: calc(100% - 48px);
+      margin-top: -36px;
+    }
+
+    .benefits {
+      padding: 76px 24px 48px;
+    }
+
+    .final-cta {
+      margin: 28px 24px 58px;
+      padding: 34px 26px;
+    }
+  }
+</style>

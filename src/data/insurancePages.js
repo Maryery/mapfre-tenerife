@@ -1,12 +1,12 @@
 const office = {
-  phone: "+34 671 49 20 25",
+  phone: "+34 676 74 37 07",
   address: "Calle Grande, 56, 38670 Adeje, Santa Cruz de Tenerife",
 };
 
 export const insurancePages = [
   {
     officeLabel: "Oficina",
-    addressLabel: "Direccion",
+    addressLabel: "Dirección",
     phoneLabel: "Telefono",
     lang: "es",
     slug: "seguro-coche-tenerife",
@@ -16,7 +16,7 @@ export const insurancePages = [
     type: "Coche",
     badge: "Seguros en Tenerife",
     officeName: "Oficina MAPFRE Adeje",
-    officeMessage: "Atencion local y presencial en Adeje",
+    officeMessage: "Atención local y presencial en Adeje",
     phone: office.phone,
     address: office.address,
     navButton: "WhatsApp",
@@ -25,14 +25,14 @@ export const insurancePages = [
     cardTitle: "Consulta gratuita",
     cardButton: "Contactar ahora",
     sectionLabel: "Ventajas",
-    sectionTitle: "Mas de 15 anos de experiencia",
+    sectionTitle: "Mas de 15 años de experiencia",
     finalTitle: "Necesitas ayuda con tu seguro?",
-    finalText: "Habla con la oficina MAPFRE de Adeje y recibe orientacion personalizada.",
+    finalText: "Habla con la oficina MAPFRE de Adeje y recibe orientación personalizada.",
     finalButton: "Solicitar presupuesto",
-    whatsappText: "Hola, quiero informacion sobre seguro de coche en Tenerife",
-    trust: ["Oficina MAPFRE Adeje", "Atencion presencial", "Experiencia local"],
+    whatsappText: "Hola, quiero información sobre seguro de coche en Tenerife",
+    trust: ["Oficina MAPFRE Adeje", "Atención presencial", "Experiencia local"],
     benefits: [
-      "Atencion personalizada",
+      "Atención personalizada",
       "Comparativa gratuita",
       "Asesoramiento cercano",
       "Cobertura en Tenerife y Canarias"
@@ -46,7 +46,7 @@ export const insurancePages = [
       {
         number: "02",
         title: "Trato cercano",
-        text: "Acompanamiento claro antes, durante y despues de contratar."
+        text: "Acompañamiento claro antes, durante y despues de contratar."
       },
       {
         number: "03",
@@ -61,11 +61,11 @@ export const insurancePages = [
     slug: "seguro-hogar-tenerife",
     brand: "Oficina MAPFRE Adeje",
     title: "Seguro de hogar en Tenerife",
-    subtitle: "Proteccion para tu vivienda, alquiler o segunda residencia en Canarias.",
+    subtitle: "Protección para tu vivienda, alquiler o segunda residencia en Canarias.",
     type: "Hogar",
     badge: "Seguros de hogar en Tenerife",
     officeName: "Oficina MAPFRE Adeje",
-    officeMessage: "Atencion local y presencial en Adeje",
+    officeMessage: "Atención local y presencial en Adeje",
     phone: office.phone,
     address: office.address,
     navButton: "WhatsApp",
@@ -78,7 +78,7 @@ export const insurancePages = [
     finalTitle: "Quieres proteger tu vivienda?",
     finalText: "Te ayudamos desde la oficina MAPFRE de Adeje a encontrar una cobertura adaptada a tu hogar.",
     finalButton: "Solicitar presupuesto",
-    whatsappText: "Hola, quiero informacion sobre seguro de hogar en Tenerife",
+    whatsappText: "Hola, quiero información sobre seguro de hogar en Tenerife",
     trust: ["Oficina MAPFRE Adeje", "Viviendas y alquileres", "Trato cercano"],
     benefits: [
       "Para vivienda habitual",
@@ -89,13 +89,13 @@ export const insurancePages = [
     cards: [
       {
         number: "01",
-        title: "Proteccion real",
+        title: "Protección real",
         text: "Te orientamos para elegir coberturas utiles para tu vivienda."
       },
       {
         number: "02",
         title: "Servicio cercano",
-        text: "Atencion presencial en Adeje y acompanamiento claro."
+        text: "Atención presencial en Adeje y acompanamiento claro."
       },
       {
         number: "03",
@@ -110,11 +110,11 @@ export const insurancePages = [
     slug: "seguro-vida-tenerife",
     brand: "Oficina MAPFRE Adeje",
     title: "Seguro de vida en Tenerife",
-    subtitle: "Protege a tu familia, tu hipoteca y tu tranquilidad economica.",
+    subtitle: "Protege a tu familia, tu hipoteca y tu tranquilidad económica.",
     type: "Vida",
     badge: "Seguros de vida en Tenerife",
     officeName: "Oficina MAPFRE Adeje",
-    officeMessage: "Atencion local y presencial en Adeje",
+    officeMessage: "Atención local y presencial en Adeje",
     phone: office.phone,
     address: office.address,
     navButton: "WhatsApp",
@@ -127,10 +127,10 @@ export const insurancePages = [
     finalTitle: "Quieres valorar un seguro de vida?",
     finalText: "Te ayudamos a entender tus opciones desde nuestra oficina MAPFRE en Adeje.",
     finalButton: "Solicitar presupuesto",
-    whatsappText: "Hola, quiero informacion sobre seguro de vida en Tenerife",
-    trust: ["Oficina MAPFRE Adeje", "Proteccion familiar", "Asesoria cercana"],
+    whatsappText: "Hola, quiero información sobre seguro de vida en Tenerife",
+    trust: ["Oficina MAPFRE Adeje", "Protección familiar", "Asesoria cercana"],
     benefits: [
-      "Proteccion familiar",
+      "Protección familiar",
       "Cobertura para hipoteca",
       "Asesoria personalizada",
       "Claridad en condiciones"
@@ -139,7 +139,7 @@ export const insurancePages = [
       {
         number: "01",
         title: "Familia",
-        text: "Pensado para proteger a quienes mas importan."
+        text: "Pensado para proteger a quienes más importan."
       },
       {
         number: "02",
@@ -149,7 +149,7 @@ export const insurancePages = [
       {
         number: "03",
         title: "Compromiso",
-        text: "Acompanamiento cercano para tomar una buena decision."
+        text: "Acompañamiento cercano para tomar una buena decisión."
       }
     ]
   },
@@ -163,7 +163,7 @@ export const insurancePages = [
     type: "Salud",
     badge: "Seguros de salud en Tenerife",
     officeName: "Oficina MAPFRE Adeje",
-    officeMessage: "Atencion local y presencial en Adeje",
+    officeMessage: "Atención local y presencial en Adeje",
     phone: office.phone,
     address: office.address,
     navButton: "WhatsApp",
@@ -174,13 +174,13 @@ export const insurancePages = [
     sectionLabel: "Ventajas",
     sectionTitle: "Cuida tu salud con una buena cobertura",
     finalTitle: "Quieres comparar seguros de salud?",
-    finalText: "Te orientamos desde Adeje para elegir una opcion adaptada a tus necesidades.",
+    finalText: "Te orientamos desde Adeje para elegir una opción adaptada a tus necesidades.",
     finalButton: "Solicitar presupuesto",
-    whatsappText: "Hola, quiero informacion sobre seguro de salud en Tenerife",
+    whatsappText: "Hola, quiero información sobre seguro de salud en Tenerife",
     trust: ["Oficina MAPFRE Adeje", "Salud y familia", "Asesoria cercana"],
     benefits: [
       "Opciones para familias",
-      "Atencion privada",
+      "Atención privada",
       "Asesoramiento claro",
       "Comparativa gratuita"
     ],
@@ -198,7 +198,7 @@ export const insurancePages = [
       {
         number: "03",
         title: "Cercania",
-        text: "Un servicio humano para una decision importante."
+        text: "Un servicio humano para una decisión importante."
       }
     ]
   },
@@ -208,11 +208,11 @@ export const insurancePages = [
     slug: "seguro-embarcaciones-tenerife",
     brand: "Oficina MAPFRE Adeje",
     title: "Seguro de embarcaciones en Tenerife",
-    subtitle: "Proteccion para barcos, pequenas embarcaciones y navegacion en Canarias.",
+    subtitle: "Protección para barcos, pequeñas embarcaciones y navegación en Canarias.",
     type: "Embarcaciones",
     badge: "Seguros nauticos en Tenerife",
     officeName: "Oficina MAPFRE Adeje",
-    officeMessage: "Atencion local y presencial en Adeje",
+    officeMessage: "Atención local y presencial en Adeje",
     phone: office.phone,
     address: office.address,
     navButton: "WhatsApp",
@@ -222,10 +222,10 @@ export const insurancePages = [
     cardButton: "Contactar ahora",
     sectionLabel: "Ventajas",
     sectionTitle: "Navega con mas tranquilidad",
-    finalTitle: "Necesitas asegurar tu embarcacion?",
+    finalTitle: "Necesitas asegurar tu embarcación?",
     finalText: "Te ayudamos a valorar una cobertura adecuada para navegar en Canarias.",
     finalButton: "Solicitar presupuesto",
-    whatsappText: "Hola, quiero informacion sobre seguro de embarcaciones en Tenerife",
+    whatsappText: "Hola, quiero información sobre seguro de embarcaciones en Tenerife",
     trust: ["Oficina MAPFRE Adeje", "Nautica en Canarias", "Asesoramiento"],
     benefits: [
       "Para embarcaciones privadas",
@@ -236,8 +236,8 @@ export const insurancePages = [
     cards: [
       {
         number: "01",
-        title: "Especializacion",
-        text: "Te ayudamos a revisar opciones para tu embarcacion."
+        title: "Especialización",
+        text: "Te ayudamos a revisar opciones para tu embarcación."
       },
       {
         number: "02",
@@ -254,12 +254,12 @@ export const insurancePages = [
 
   {
     lang: "es",
-    slug: "ahorro-inversion-tenerife",
+    slug: "ahorro-inversión-tenerife",
     brand: "Oficina MAPFRE Adeje",
-    title: "Ahorro e inversion desde 1 euro al dia",
-    subtitle: "Descubre como sacar mas partido a tu dinero con soluciones de ahorro, inversion y planificacion futura.",
-    type: "Ahorro e inversion",
-    badge: "Ahorro e inversion en Tenerife",
+    title: "Ahorro e inversión desde 1 euro al dia",
+    subtitle: "Descubre como sacar mas partido a tu dinero con soluciones de ahorro, inversión y planificación futura.",
+    type: "Ahorro e inversión",
+    badge: "Ahorro e inversión en Tenerife",
     officeName: "Oficina MAPFRE Adeje",
     officeMessage: "Asesoramiento local y presencial en Adeje",
     phone: office.phone,
@@ -267,18 +267,18 @@ export const insurancePages = [
     navButton: "WhatsApp",
     primaryCta: "Calcular ahora",
     secondaryCta: "Ver soluciones",
-    cardTitle: "Desde 1 euro al dia",
-    cardButton: "Quiero informacion",
+    cardTitle: "Desde 1 euro al día",
+    cardButton: "Quiero información",
     sectionLabel: "Soluciones",
     sectionTitle: "Elige como hacer crecer tu dinero",
     finalTitle: "Quieres planificar tu ahorro?",
     finalText: "Te ayudamos a valorar opciones segun tu perfil, plazo y objetivos.",
     finalButton: "Solicitar asesoramiento",
-    whatsappText: "Hola, quiero informacion sobre ahorro e inversion desde 1 euro al dia",
-    trust: ["Oficina MAPFRE Adeje", "Desde 1 euro al dia", "Planificacion futura"],
+    whatsappText: "Hola, quiero informacion sobre ahorro e inversion desde 1 euro al día",
+    trust: ["Oficina MAPFRE Adeje", "Desde 1 euro al dia", "Planificación futura"],
     benefits: [
       "Seguros de ahorro",
-      "Soluciones de inversion",
+      "Soluciones de inversión",
       "Planes de pensiones",
       "Asesoramiento personalizado"
     ],
@@ -286,11 +286,11 @@ export const insurancePages = [
       {
         number: "01",
         title: "Seguros de ahorro",
-        text: "Una forma sencilla de ahorrar con estabilidad y planificacion."
+        text: "Una forma sencilla de ahorrar con estabilidad y planificación."
       },
       {
         number: "02",
-        title: "Soluciones de inversion",
+        title: "Soluciones de inversión",
         text: "Opciones para rentabilizar tu dinero segun tu perfil y plazo."
       },
       {

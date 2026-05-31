@@ -1,17 +1,49 @@
 ---
-const phone = "+34 646 74 37 07";
-const phoneHref = "tel:+34646743707";
+const phone = "+34 822 145 513 ";
+const phoneHref = "tel:+34822145513";
 const whatsappHref = "https://wa.me/34646743707";
 
 const products = [
-"Coche",
-"Hogar",
-"Salud",
-"Vida",
-"Ahorro e inversion",
-"Embarcaciones",
-"Empresas",
-"Decesos",
+  {
+    title: "Coche",
+    text: "Protección para tu vehículo.",
+    icon: "/icons/car.svg"
+  },
+  {
+    title: "Hogar",
+    text: "Tu vivienda siempre protegida.",
+    icon: "/icons/home.svg"
+  },
+  {
+    title: "Salud",
+    text: "Acceso a medicina privada.",
+    icon: "/icons/health.svg"
+  },
+  {
+    title: "Vida",
+    text: "Tranquilidad para tu familia.",
+    icon: "/icons/heart.svg"
+  },
+  {
+    title: "Ahorro e inversión",
+    text: "Soluciones para tu futuro.",
+    icon: "/icons/chart.svg"
+  },
+  {
+    title: "Embarcaciones",
+    text: "Navega con tranquilidad.",
+    icon: "/icons/boat.svg"
+  },
+  {
+    title: "Empresas",
+    text: "Seguros para negocios y autónomos.",
+    icon: "/icons/building.svg"
+  },
+  {
+    title: "Decesos",
+    text: "Todo organizado para tu familia.",
+    icon: "/icons/shield.svg"
+  }
 ];
 
 const languages = [
@@ -39,7 +71,7 @@ const languages = [
         <span class="logoFrame">
           <img src="/logos/mapfre.svg" alt="MAPFRE" />
         </span>
-        <span class="brandText"> <small>TENERIFE</small>Oficina Adeje Calle Grande
+        <span class="brandText"> <small>TENERIFE</small>Oficina Delegada ADEJE CALLE GRANDE
         </span>
   </a>
 
@@ -54,20 +86,44 @@ const languages = [
     <div class="heroContent">
       <p class="eyebrow">TU OFICINA MAPFRE EN ADEJE</p>
 
-      <h1>Seguros en Tenerife con asesoramiento cercano y profesional</h1>
+      <h1>Tu oficina MAPFRE de confianza en Adeje</h1>
 
       <p class="lead">
-        Te ayudamos a proteger lo que más importa con soluciones personalizadas en coche, hogar, salud, vida, decesos, ahorro e inversión y empresas. Atención rápida, cercana y de confianza desde nuestra oficina en Adeje.
+        Protegemos a familias, autónomos, comercios y empresas con soluciones de coche, hogar, salud, vida, decesos, ahorro e inversión.
       </p>
 
       <div class="heroActions">
         <a href={phoneHref} class="button primary large">Llámanos ahora</a>
-        <a href={whatsappHref} class="button secondary large">Escribenos por WhatsApp</a>
+        <a href={whatsappHref} class="button secondary large">Escríbenos por WhatsApp</a>
       </div>
 
       <div class="officeCard">
-        <strong>Calle Grande, 56, 38670 Adeje</strong>
+        <strong>Delegado/a:</strong>
+        <span>Antonio Soto Melchor</span>
+        <strong>Dirección:</strong>
+        <span>Calle Grande, 56. 38670 - Adeje</span>
         <span>Santa Cruz de Tenerife · Atención presencial y multilingue</span>
+        <strong>Horario de atención:</strong>
+        <span>L - J 9:00 - 19:00</span>
+        <span>V 9:00 - 17:00</span>
+
+        <div class="mapa">
+  <iframe
+    src="https://www.google.com/maps?q=Calle+Grande+56+Adeje&output=embed"
+    width="100%"
+    height="350"
+    style="border:0;border-radius:12px;"
+    loading="lazy"
+    allowfullscreen="">
+  </iframe>
+  <a
+  href="https://maps.google.com/?q=Calle+Grande+56+Adeje"
+  target="_blank"
+  class="btnMapa">
+  Cómo llegar
+</a>
+</div>
+        
       </div>
     </div>
 
@@ -77,19 +133,39 @@ const languages = [
   </section>
 
   <section class="products">
-    <div class="sectionHeader">
-      <p class="eyebrow">Nuestros seguros</p>
-      <h2>Tu oficina de confianza para todos tus seguros</h2>
-    </div>
+  <div class="sectionHeader">
+    <p class="eyebrow">Nuestros seguros</p>
+    <h2>Tu oficina de confianza para todos tus seguros</h2>
+  </div>
 
-    <div class="productGrid">
-      {products.map((product) => (
+  <div class="productGrid">
+    {products.map((product) => (
       <article class="productCard">
-        <span>{product}</span>
-      </article>
-      ))}
-    </div>
-  </section>
+
+  <img
+    src={product.icon}
+    alt={product.title}
+    class="productIcon"
+  />
+
+  <h3>{product.title}</h3>
+
+  <p>{product.text}</p>
+
+  <a
+    href={`https://wa.me/34646743707?text=${encodeURIComponent(
+      `Hola, quiero información sobre el seguro de ${product.title} con MAPFRE Adeje - Calle Grande 56.`
+    )}`}
+    target="_blank"
+    class="productLink"
+  >
+    Solicitar presupuesto →
+  </a>
+
+</article>
+    ))}
+  </div>
+</section>
 
   <section class="trust">
     <div>
@@ -383,31 +459,85 @@ const languages = [
   }
 
   .productGrid {
-    margin-top: 42px;
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 18px;
-  }
+  margin-top: 42px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+}
 
-  .productCard {
-    background: #ffffff;
-    border: 1px solid #e5e7eb;
-    border-radius: 26px;
-    padding: 34px 28px;
-    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
-    cursor: pointer;
-  }
+.productCard {
+  min-height: 255px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 26px;
+  padding: 34px 28px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+}
 
-  .productCard:hover {
-    transform: translateY(-4px);
-    border-color: #e30613;
-    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
-  }
+.productCard:hover {
+  transform: translateY(-4px);
+  border-color: var(--red);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+}
 
-  .productCard span {
-    font-size: 20px;
-    font-weight: 900;
-  }
+.productCard:hover .productIcon {
+  transform: scale(1.08);
+}
+
+.productIcon {
+  width: 56px;
+  height: 56px;
+  margin-bottom: 24px;
+  color: var(--red);
+  display: block;
+  transition: transform 0.25s ease;
+}
+
+.productIcon svg,
+.productIcon svg * {
+  width: 56px;
+  height: 56px;
+  display: block;
+  stroke: var(--red) !important;
+  fill: none !important;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.productCard h3 {
+  margin: 0 0 14px;
+  font-size: 24px;
+  font-weight: 900;
+  color: var(--heading);
+}
+
+.productCard p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.productLink {
+  display: inline-block;
+  margin-top: auto;
+  padding-top: 24px;
+  color: var(--red);
+  font-weight: 900;
+  font-size: 17px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.productLink:hover {
+  color: var(--red-dark);
+  transform: translateX(4px);
+}
 
   .trust {
     background: white;
@@ -519,4 +649,23 @@ const languages = [
       border-radius: 24px;
     }
   }
+  .mapa {
+  margin-top: 20px;
+}
+
+.mapa iframe {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+.btnMapa{
+  display:inline-block;
+  margin-top:15px;
+  padding:12px 24px;
+  background:#d81e05;
+  color:white;
+  text-decoration:none;
+  border-radius:8px;
+  font-weight:600;
+}
 </style>

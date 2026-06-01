@@ -1,17 +1,17 @@
 ---
 const phone = "+34 822 145 513";
 const phoneHref = "tel:+34822145513";
-const whatsappHref = "https://wa.me/34646743707?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20seguros%20de%20MAPFRE.";
+const whatsappHref = "https://wa.me/34646743707?text=Hallo%2C%20ich%20m%C3%B6chte%20Informationen%20%C3%BCber%20die%20Versicherungen%20von%20MAPFRE%20in%20Adeje%20erhalten.";
 
 const products = [
-  { title: "Coche", text: "Protección para tu vehículo.", icon: "/icons/car.svg" },
-  { title: "Hogar", text: "Tu vivienda siempre protegida.", icon: "/icons/home.svg" },
-  { title: "Salud", text: "Acceso a medicina privada.", icon: "/icons/health.svg" },
-  { title: "Vida", text: "Tranquilidad para tu familia.", icon: "/icons/heart.svg" },
-  { title: "Ahorro e inversión", text: "Soluciones para tu futuro.", icon: "/icons/chart.svg" },
-  { title: "Embarcaciones", text: "Navega con tranquilidad.", icon: "/icons/boat.svg" },
-  { title: "Empresas", text: "Seguros para negocios y autónomos.", icon: "/icons/building.svg" },
-  { title: "Decesos", text: "Todo organizado para tu familia.", icon: "/icons/shield.svg" },
+  { title: "Auto", text: "Schutz für Ihr Fahrzeug.", icon: "/icons/car.svg" },
+  { title: "Haus", text: "Ihr Zuhause immer gut geschützt.", icon: "/icons/home.svg" },
+  { title: "Gesundheit", text: "Zugang zu privater Gesundheitsversorgung.", icon: "/icons/health.svg" },
+  { title: "Leben", text: "Sicherheit für Ihre Familie.", icon: "/icons/heart.svg" },
+  { title: "Sparen und Investition", text: "Lösungen für Ihre Zukunft.", icon: "/icons/chart.svg" },
+  { title: "Boote", text: "Mit Ruhe und Sicherheit unterwegs.", icon: "/icons/boat.svg" },
+  { title: "Unternehmen", text: "Versicherungen für Geschäfte und Selbstständige.", icon: "/icons/building.svg" },
+  { title: "Bestattungsvorsorge", text: "Alles organisiert für Ihre Familie.", icon: "/icons/shield.svg" },
 ];
 
 const languages = [
@@ -22,15 +22,15 @@ const languages = [
 ];
 ---
 
-<html lang="es">
+<html lang="de">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MAPFRE Adeje Büro | Versicherungen auf Teneriffa</title>
   <link rel="icon" href="/logos/mapfre.svg" type="image/svg+xml" />
-  <title>Oficina MAPFRE Adeje | Seguros en Tenerife</title>
   <meta
     name="description"
-    content="Oficina MAPFRE Adeje. Seguros en Tenerife para particulares, familias, autónomos, comercios y empresas."
+    content="MAPFRE Adeje Büro. Versicherungen auf Teneriffa für Familien, Residenten, Selbstständige, Geschäfte und Unternehmen."
   />
 </head>
 
@@ -42,18 +42,18 @@ const languages = [
     </span>
     <span class="brandText">
       <small>TENERIFE</small>
-      Oficina Delegada ADEJE CALLE GRANDE
+      MAPFRE Büro ADEJE CALLE GRANDE
     </span>
   </a>
   <nav class="languageSwitcher">
-    <a href="/" class="active">ES</a>
+    <a href="/">ES</a>
     <a href="/en/">EN</a>
-    <a href="/de/">DE</a>
+    <a href="/de/" class="active">DE</a>
     <a href="/it/">IT</a>
     <a href="/fr/">FR</a>
   </nav>
   <nav class="headerActions">
-    <a href={phoneHref} class="button cta">Contacto {phone}</a>
+    <a href={phoneHref} class="button cta">Kontakt {phone}</a>
     <a href={whatsappHref} class="button secondary">WhatsApp</a>
   </nav>
 </header>
@@ -61,31 +61,31 @@ const languages = [
 <main>
   <section class="hero">
     <div class="heroContent">
-      <p class="eyebrow">Tu oficina MAPFRE en Adeje</p>
+      <p class="eyebrow">Ihr MAPFRE Büro in Adeje</p>
 
-      <h1>Tu oficina MAPFRE de confianza en Adeje</h1>
+      <h1>Ihr MAPFRE Büro des Vertrauens in Adeje</h1>
 
       <p class="lead">
-        Asesoramiento cercano y soluciones a medida para familias, autónomos, comercios y empresas.
+        Persönliche Beratung und maßgeschneiderte Versicherungslösungen für Familien, Residenten, Selbstständige, Geschäfte und Unternehmen.
       </p>
 
       <div class="heroActions">
-        <a href={phoneHref} class="button primary large">Llámanos ahora</a>
-        <a href={whatsappHref} class="button secondary large">Escríbenos por WhatsApp</a>
+        <a href={phoneHref} class="button primary large">Jetzt anrufen</a>
+        <a href={whatsappHref} class="button secondary large">Per WhatsApp schreiben</a>
       </div>
 
       <div class="officeCard">
-        <strong>Equipo MAPFRE Adeje</strong>
-        <span>Antonio Soto Melchor · Delegado</span>
-        <span>Maryery Vargas Moreno · Gestora Comercial</span>
+        <strong>MAPFRE Adeje Team</strong>
+        <span>Antonio Soto Melchor · Delegierter</span>
+        <span>Maryery Vargas Moreno · Kundenberaterin</span>
 
-        <strong>Dirección:</strong>
+        <strong>Adresse:</strong>
         <span>Calle Grande, 56. 38670 - Adeje</span>
-        <span>Santa Cruz de Tenerife · Atención presencial y multilingüe</span>
+        <span>Santa Cruz de Tenerife · Persönliche und mehrsprachige Betreuung</span>
 
-        <strong>Horario de atención:</strong>
-        <span>L - J 9:00 - 19:00</span>
-        <span>V 9:00 - 17:00</span>
+        <strong>Öffnungszeiten:</strong>
+        <span>Mo - Do 9:00 - 19:00</span>
+        <span>Fr 9:00 - 17:00</span>
 
         <div class="mapa">
           <iframe
@@ -101,21 +101,21 @@ const languages = [
             href="https://maps.google.com/?q=Calle+Grande+56+Adeje"
             target="_blank"
             class="btnMapa">
-            Cómo llegar
+            Anfahrt anzeigen
           </a>
         </div>
       </div>
     </div>
 
     <div class="heroImage">
-      <img src="/images/antonio.png" alt="Antonio Soto Melchor, delegado de MAPFRE Adeje" />
+      <img src="/images/antonio.png" alt="Antonio Soto Melchor, Delegierter von MAPFRE Adeje" />
     </div>
   </section>
 
   <section class="products">
     <div class="sectionHeader">
-      <p class="eyebrow">Nuestros seguros</p>
-      <h2>Tu oficina de confianza para todos tus seguros</h2>
+      <p class="eyebrow">Unsere Versicherungen</p>
+      <h2>Ihr Büro des Vertrauens für alle Ihre Versicherungen</h2>
     </div>
 
     <div class="productGrid">
@@ -129,12 +129,12 @@ const languages = [
 
           <a
             href={`https://wa.me/34646743707?text=${encodeURIComponent(
-              `Hola, quiero información sobre el seguro de ${product.title} con MAPFRE Adeje - Calle Grande 56.`
+              `Hallo, ich möchte Informationen über die Versicherung ${product.title} bei MAPFRE Adeje - Calle Grande 56.`
             )}`}
             target="_blank"
             class="productLink"
           >
-            Solicitar presupuesto →
+            Angebot anfordern →
           </a>
         </article>
       ))}
@@ -143,50 +143,49 @@ const languages = [
 
   <section class="trust">
     <div>
-      <p class="eyebrow">Experiencia y cercanía</p>
-      <h2>Asesoramiento con criterio, compromiso y conocimiento local</h2>
+      <p class="eyebrow">Erfahrung und Nähe</p>
+      <h2>Beratung mit Kompetenz, Engagement und lokaler Erfahrung</h2>
     </div>
 
     <p>
-      No somos un comparador ni un centro de llamadas. Somos una oficina física en Adeje donde te atendemos personalmente para ayudarte a elegir el seguro que realmente necesitas. Analizamos tu situación, resolvemos tus dudas y te acompañamos cuando más lo necesitas.
+      Wir sind kein Vergleichsportal und kein Callcenter. Wir sind ein persönliches Büro in Adeje, in dem wir Sie individuell beraten und Ihnen helfen, die Versicherung zu wählen, die Sie wirklich brauchen. Wir analysieren Ihre Situation, beantworten Ihre Fragen und begleiten Sie, wenn Sie uns am meisten benötigen.
     </p>
   </section>
 
   <section class="team">
     <div class="teamImage">
-      <img src="/images/maryery.JPG" alt="Maryery Vargas Moreno, gestora comercial de MAPFRE Adeje" />
+      <img src="/images/maryery.JPG" alt="Maryery Vargas Moreno, Kundenberaterin bei MAPFRE Adeje" />
     </div>
 
     <div class="teamContent">
-      <p class="eyebrow">Atención personalizada</p>
-      <h2>Conoce a tu equipo MAPFRE Adeje</h2>
+      <p class="eyebrow">Persönliche Betreuung</p>
+      <h2>Lernen Sie Ihr MAPFRE Adeje Team kennen</h2>
 
       <p>
-        Te atenderemos de forma cercana, clara y profesional para ayudarte a encontrar la solución aseguradora que mejor se adapta a tus necesidades.
+        Wir beraten Sie klar, freundlich und professionell, damit Sie die Versicherungslösung finden, die am besten zu Ihren Bedürfnissen passt.
       </p>
 
       <div class="teamCard">
         <strong>Maryery Vargas Moreno</strong>
-        <span>Gestora Comercial · MAPFRE Adeje</span>
+        <span>Kundenberaterin · MAPFRE Adeje</span>
       </div>
 
       <div class="teamCard">
         <strong>Antonio Soto Melchor</strong>
-        <span>Delegado · MAPFRE Adeje</span>
+        <span>Delegierter · MAPFRE Adeje</span>
       </div>
     </div>
   </section>
-
   <section class="reviews">
   <div class="reviewsContent">
-    <p class="eyebrow">Opiniones de clientes</p>
+    <p class="eyebrow">Kundenbewertungen</p>
 
-    <h2>La confianza de nuestros clientes también habla por nosotros</h2>
+    <h2>Das Vertrauen unserer Kunden spricht für sich</h2>
 
     <div class="reviewStars">★★★★★</div>
 
     <p class="reviewText">
-      Descubre las opiniones de nuestros clientes sobre la atención y el servicio de MAPFRE Adeje.
+      Lesen Sie die Erfahrungen unserer Kunden mit dem Service, der persönlichen Beratung und der Betreuung von MAPFRE Adeje.
     </p>
 
     <a
@@ -195,20 +194,19 @@ const languages = [
       rel="noopener noreferrer"
       class="reviewButton"
     >
-      Leer reseñas de Google
+      Google-Bewertungen lesen
     </a>
   </div>
 </section>
-
   <section class="languages">
     <div class="languageContent">
       <div>
-        <p class="eyebrow">Atención en varios idiomas</p>
+        <p class="eyebrow">Mehrsprachige Betreuung</p>
 
-        <h2>Atendemos a residentes y propietarios extranjeros en Tenerife</h2>
+        <h2>Wir betreuen ausländische Residenten und Immobilienbesitzer auf Teneriffa</h2>
 
         <p class="languageText">
-          Te ayudamos a contratar y gestionar tus seguros en tu idioma, con atención cercana y personalizada desde nuestra oficina de Adeje.
+          Wir helfen Ihnen, Ihre Versicherungen in Ihrer Sprache abzuschließen und zu verwalten, mit persönlicher und freundlicher Betreuung in unserem Büro in Adeje.
         </p>
       </div>
 
@@ -347,9 +345,9 @@ const languages = [
   }
 
   .cta {
-  background: #f3d7d7;
-  color: #c43c3c;
-}
+    background: #f3d7d7;
+    color: #c43c3c;
+  }
 
   .secondary {
     background: white;
@@ -532,7 +530,6 @@ const languages = [
     color: var(--red);
     font-weight: 900;
     font-size: 17px;
-    text-decoration: none;
     transition: all 0.2s ease;
   }
 
@@ -712,7 +709,7 @@ const languages = [
   color: #d81e05;
   font-weight: 700;
 }
-  
+
   @media (max-width: 620px) {
     .brand {
       width: 100%;
@@ -799,5 +796,4 @@ const languages = [
 .reviewButton:hover {
   background: #ebc8c8;
 }
-
 </style>

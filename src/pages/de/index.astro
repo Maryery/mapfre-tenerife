@@ -257,53 +257,53 @@ const languages = [
   }
 
   .siteHeader {
-    height: 84px;
-    padding: 0 clamp(24px, 6vw, 88px);
-    background: var(--white);
-    border-bottom: 1px solid var(--line);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 24px;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-  }
+  min-height: 96px;
+  padding: 18px clamp(24px, 6vw, 88px);
+  background: var(--white);
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
 
-  .brand {
-    display: flex;
-    align-items: center;
-    gap: 18px;
-    min-width: 0;
-    color: var(--black);
-    font-weight: 900;
-  }
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  color: var(--black);
+  font-weight: 900;
+}
 
-  .logoFrame {
-    width: 132px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    flex: 0 0 auto;
-    padding: 5px;
-  }
+.logoFrame {
+  width: 150px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  overflow: visible;
+  flex: 0 0 150px;
+  padding: 0;
+}
 
-  .logoFrame img {
-    width: 132px;
-    height: auto;
-    display: block;
-  }
+.logoFrame img {
+  width: 150px;
+  height: auto;
+  display: block;
+}
 
-  .brandText {
-    border-left: 1px solid #e7e7e7;
-    padding-left: 22px;
-    margin-left: 6px;
-    display: flex;
-    flex-direction: column;
-    line-height: 1.05;
-    white-space: nowrap;
-  }
+.brandText {
+  border-left: 1px solid #e7e7e7;
+  padding-left: 18px;
+  margin-left: 4px;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.05;
+  white-space: nowrap;
+}
 
   .brandText small {
     font-size: 11px;
@@ -437,7 +437,7 @@ const languages = [
     height: 100%;
     display: block;
     object-fit: cover;
-    object-position: 38% top;
+    object-position: center;
   }
 
   .mapa {
@@ -716,12 +716,16 @@ const languages = [
     }
 
     .logoFrame {
-      width: 116px;
-      height: 34px;
+      width: 150px;
+      height: auto;
+      flex: 0 0 150px;
+      padding: 0;
+      overflow: visible;
     }
 
     .logoFrame img {
-      width: 116px;
+      width: 150px;
+      height: auto;
     }
 
     .brandText {
@@ -752,6 +756,9 @@ const languages = [
     .heroImage {
       height: 260px;
       border-radius: 24px;
+    }
+    .heroImage img {
+      object-position: center top;
     }
   }
 .reviews {

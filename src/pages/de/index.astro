@@ -256,7 +256,7 @@ const languages = [
     text-decoration: none;
   }
 
-  .siteHeader {
+ .siteHeader {
   min-height: 96px;
   padding: 18px clamp(24px, 6vw, 88px);
   background: var(--white);
@@ -345,9 +345,9 @@ const languages = [
   }
 
   .cta {
-    background: #f3d7d7;
-    color: #c43c3c;
-  }
+  background: #f3d7d7;
+  color: #c43c3c;
+}
 
   .secondary {
     background: white;
@@ -356,19 +356,16 @@ const languages = [
   }
 
   .hero {
-    min-height: calc(100vh - 84px);
-    padding: clamp(56px, 8vw, 110px) clamp(24px, 6vw, 88px);
+    min-height: auto;
+    padding: clamp(30px, 5vw, 70px) clamp(24px, 6vw, 88px);
     display: grid;
-    grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
-    gap: clamp(40px, 6vw, 90px);
-    align-items: center;
-    background:
-      radial-gradient(circle at top right, rgba(0,0,0,0.03), transparent 28%),
-      linear-gradient(180deg, #ffffff 0%, #f4f5f7 100%);
-  }
+    grid-template-columns: minmax(0, 1fr) minmax(360px, 0.9fr);
+    gap: clamp(28px, 4vw, 56px);
+    align-items: start;
+  } 
 
   .heroContent {
-    max-width: 760px;
+    max-width: 640px;
   }
 
   .eyebrow {
@@ -430,6 +427,7 @@ const languages = [
     border-radius: 28px;
     overflow: hidden;
     box-shadow: 0 40px 80px rgba(15, 23, 42, 0.12);
+    margin-top: 40px;
   }
 
   .heroImage img {
@@ -437,7 +435,7 @@ const languages = [
     height: 100%;
     display: block;
     object-fit: cover;
-    object-position: center;
+    object-position: right center;
   }
 
   .mapa {
@@ -458,6 +456,16 @@ const languages = [
     color: white;
     border-radius: 8px;
     font-weight: 600;
+  }
+  @media (min-width: 981px) {
+  .officeCard {
+    max-width: 640px;
+    width: 100%;
+  }
+
+  .mapa iframe {
+    height: 320px;
+  }
   }
 
   .products,
@@ -530,6 +538,7 @@ const languages = [
     color: var(--red);
     font-weight: 900;
     font-size: 17px;
+    text-decoration: none;
     transition: all 0.2s ease;
   }
 
@@ -709,7 +718,12 @@ const languages = [
   color: #d81e05;
   font-weight: 700;
 }
-
+  @media (min-width: 1200px) {
+    .heroImage {
+      margin-top: : -15px;
+    }
+  }
+  
   @media (max-width: 620px) {
     .brand {
       width: 100%;
@@ -724,8 +738,8 @@ const languages = [
     }
 
     .logoFrame img {
-      width: 150px;
-      height: auto;
+    width: 150px;
+     height: auto;
     }
 
     .brandText {
@@ -803,4 +817,5 @@ const languages = [
 .reviewButton:hover {
   background: #ebc8c8;
 }
+
 </style>

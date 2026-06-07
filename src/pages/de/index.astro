@@ -1,17 +1,17 @@
 ---
 const phone = "+34 822 145 513";
 const phoneHref = "tel:+34822145513";
-const whatsappHref = "https://wa.me/34646743707?text=Hallo%2C%20ich%20m%C3%B6chte%20Informationen%20%C3%BCber%20die%20Versicherungen%20von%20MAPFRE%20in%20Adeje%20erhalten.";
+const whatsappHref = "https://wa.me/34646743707?text=Hallo%2C%20ich%20möchte%20Informationen%20über%20die%20Versicherungen%20von%20MAPFRE.";
 
 const products = [
   { title: "Auto", text: "Schutz für Ihr Fahrzeug.", icon: "/icons/car.svg" },
-  { title: "Haus", text: "Ihr Zuhause immer gut geschützt.", icon: "/icons/home.svg" },
-  { title: "Gesundheit", text: "Zugang zu privater Gesundheitsversorgung.", icon: "/icons/health.svg" },
-  { title: "Leben", text: "Sicherheit für Ihre Familie.", icon: "/icons/heart.svg" },
-  { title: "Sparen und Investition", text: "Lösungen für Ihre Zukunft.", icon: "/icons/chart.svg" },
-  { title: "Boote", text: "Mit Ruhe und Sicherheit unterwegs.", icon: "/icons/boat.svg" },
-  { title: "Unternehmen", text: "Versicherungen für Geschäfte und Selbstständige.", icon: "/icons/building.svg" },
-  { title: "Bestattungsvorsorge", text: "Alles organisiert für Ihre Familie.", icon: "/icons/shield.svg" },
+  { title: "Haus", text: "Ihr Zuhause immer geschützt.", icon: "/icons/home.svg" },
+  { title: "Krankenversicherung", text: "Zugang zu privater medizinischer Versorgung.", icon: "/icons/health.svg" },
+  { title: "Lebensversicherung", text: "Sicherheit für Ihre Familie.", icon: "/icons/heart.svg" },
+  { title: "Sparen und Investieren", text: "Lösungen für Ihre Zukunft.", icon: "/icons/chart.svg" },
+  { title: "Boote", text: "Mit Sicherheit unterwegs auf dem Wasser.", icon: "/icons/boat.svg" },
+  { title: "Unternehmen", text: "Versicherungen für Unternehmen und Selbstständige.", icon: "/icons/building.svg" },
+  { title: "Bestattungsvorsorge", text: "Alles für Ihre Familie organisiert.", icon: "/icons/shield.svg" },
 ];
 
 const languages = [
@@ -26,25 +26,24 @@ const languages = [
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MAPFRE Adeje Büro | Versicherungen auf Teneriffa</title>
-  <link rel="icon" href="/logos/mapfre.svg" type="image/svg+xml" />
+  <link rel="icon" href="/logos/favicon.png" type="image/svg+xml" />
+  <title>Versicherungen in Adeje | Persönliche Beratung auf Teneriffa</title>
+
   <meta
     name="description"
-    content="MAPFRE Adeje Büro. Versicherungen auf Teneriffa für Familien, Residenten, Selbstständige, Geschäfte und Unternehmen."
+    content="Versicherungsberatung in Adeje. Lösungen für Privatpersonen, Familien, Selbstständige, Geschäfte und Unternehmen auf Teneriffa."
   />
 </head>
 
 <body>
 <header class="siteHeader">
   <a href="/" class="brand" aria-label="MAPFRE Adeje">
-    <span class="logoFrame">
-      <img src="/logos/mapfre.svg" alt="MAPFRE" />
-    </span>
     <span class="brandText">
-      <small>TENERIFE</small>
-      MAPFRE Büro ADEJE CALLE GRANDE
+      <small>TENERIFFA SÜD</small>
+      Versicherungen Adeje · Calle Grande 56
     </span>
   </a>
+
   <nav class="languageSwitcher">
     <a href="/">ES</a>
     <a href="/en/">EN</a>
@@ -52,70 +51,72 @@ const languages = [
     <a href="/it/">IT</a>
     <a href="/fr/">FR</a>
   </nav>
+
   <nav class="headerActions">
-    <a href={phoneHref} class="button cta">Kontakt {phone}</a>
+    <a href={phoneHref} class="button cta">Rufen Sie uns an {phone}</a>
     <a href={whatsappHref} class="button secondary">WhatsApp</a>
   </nav>
 </header>
 
 <main>
   <section class="hero">
-    <div class="heroContent">
-      <p class="eyebrow">Ihr MAPFRE Büro in Adeje</p>
 
-      <h1>Ihr MAPFRE Büro des Vertrauens in Adeje</h1>
+    <div class="heroContent">
+      <p class="eyebrow">VERSICHERUNGSBÜRO IN ADEJE</p>
+
+      <h1>Schutz und Sicherheit für Ihre Familie, Ihr Zuhause und Ihr Unternehmen</h1>
 
       <p class="lead">
-        Persönliche Beratung und maßgeschneiderte Versicherungslösungen für Familien, Residenten, Selbstständige, Geschäfte und Unternehmen.
+        Versicherungen für Privatpersonen, Selbstständige und Unternehmen in Adeje.
       </p>
 
       <div class="heroActions">
         <a href={phoneHref} class="button primary large">Jetzt anrufen</a>
-        <a href={whatsappHref} class="button secondary large">Per WhatsApp schreiben</a>
-      </div>
-
-      <div class="officeCard">
-        <strong>MAPFRE Adeje Team</strong>
-        <span>Antonio Soto Melchor · Delegierter</span>
-        <span>Maryery Vargas Moreno · Kundenberaterin</span>
-
-        <strong>Adresse:</strong>
-        <span>Calle Grande, 56. 38670 - Adeje</span>
-        <span>Santa Cruz de Tenerife · Persönliche und mehrsprachige Betreuung</span>
-
-        <strong>Öffnungszeiten:</strong>
-        <span>Mo - Do 9:00 - 19:00</span>
-        <span>Fr 9:00 - 17:00</span>
-
-        <div class="mapa">
-          <iframe
-            src="https://www.google.com/maps?q=Calle+Grande+56+Adeje&output=embed"
-            width="100%"
-            height="350"
-            style="border:0;border-radius:12px;"
-            loading="lazy"
-            allowfullscreen="">
-          </iframe>
-
-          <a
-            href="https://maps.google.com/?q=Calle+Grande+56+Adeje"
-            target="_blank"
-            class="btnMapa">
-            Anfahrt anzeigen
-          </a>
-        </div>
+        <a href={whatsappHref} class="button secondary large">Schreiben Sie uns über WhatsApp</a>
       </div>
     </div>
 
-    <div class="heroImage">
-      <img src="/images/antonio.png" alt="Antonio Soto Melchor, Delegierter von MAPFRE Adeje" />
+  </section>
+
+  <section class="officeSection">
+    <div class="trustBar">
+      <p>✓ Büro vor Ort in Adeje</p>
+      <p>✓ Unverbindliche Angebote</p>
+      <p>✓ Persönliche und mehrsprachige Beratung</p>
+      <p>✓ Schadenmanagement und Unterstützung</p>
+    </div>
+
+    <div class="officeCard">
+
+      <div class="officeInfo">
+        <strong>Unser Büro in Adeje</strong>
+        <span>📍 Calle Grande 56 · Adeje</span>
+        <span>🌍 Persönliche und mehrsprachige Beratung</span>
+        <span>🕒 Mo–Do 9:00–19:00 · Fr 9:00–17:00</span>
+
+        <a
+          href="https://maps.google.com/?q=Calle+Grande+56+Adeje"
+          target="_blank"
+          class="btnMapa">
+          Anfahrt
+        </a>
+      </div>
+
+      <div class="mapa">
+        <iframe
+          src="https://www.google.com/maps?q=Calle+Grande+56+Adeje&output=embed"
+          loading="lazy"
+          allowfullscreen="">
+        </iframe>
+      </div>
+
     </div>
   </section>
 
   <section class="products">
     <div class="sectionHeader">
       <p class="eyebrow">Unsere Versicherungen</p>
-      <h2>Ihr Büro des Vertrauens für alle Ihre Versicherungen</h2>
+      <h2>Ihr vertrauenswürdiges Büro für alle Ihre Versicherungen</h2>
     </div>
 
     <div class="productGrid">
@@ -129,7 +130,7 @@ const languages = [
 
           <a
             href={`https://wa.me/34646743707?text=${encodeURIComponent(
-              `Hallo, ich möchte Informationen über die Versicherung ${product.title} bei MAPFRE Adeje - Calle Grande 56.`
+              `Hallo, ich möchte Informationen über die ${product.title}-Versicherung von MAPFRE Adeje - Calle Grande 56.`
             )}`}
             target="_blank"
             class="productLink"
@@ -141,73 +142,11 @@ const languages = [
     </div>
   </section>
 
-  <section class="trust">
-    <div>
-      <p class="eyebrow">Erfahrung und Nähe</p>
-      <h2>Beratung mit Kompetenz, Engagement und lokaler Erfahrung</h2>
-    </div>
-
-    <p>
-      Wir sind kein Vergleichsportal und kein Callcenter. Wir sind ein persönliches Büro in Adeje, in dem wir Sie individuell beraten und Ihnen helfen, die Versicherung zu wählen, die Sie wirklich brauchen. Wir analysieren Ihre Situation, beantworten Ihre Fragen und begleiten Sie, wenn Sie uns am meisten benötigen.
-    </p>
-  </section>
-
-  <section class="team">
-    <div class="teamImage">
-      <img src="/images/maryery.JPG" alt="Maryery Vargas Moreno, Kundenberaterin bei MAPFRE Adeje" />
-    </div>
-
-    <div class="teamContent">
-      <p class="eyebrow">Persönliche Betreuung</p>
-      <h2>Lernen Sie Ihr MAPFRE Adeje Team kennen</h2>
-
-      <p>
-        Wir beraten Sie klar, freundlich und professionell, damit Sie die Versicherungslösung finden, die am besten zu Ihren Bedürfnissen passt.
-      </p>
-
-      <div class="teamCard">
-        <strong>Maryery Vargas Moreno</strong>
-        <span>Kundenberaterin · MAPFRE Adeje</span>
-      </div>
-
-      <div class="teamCard">
-        <strong>Antonio Soto Melchor</strong>
-        <span>Delegierter · MAPFRE Adeje</span>
-      </div>
-    </div>
-  </section>
-  <section class="reviews">
-  <div class="reviewsContent">
-    <p class="eyebrow">Kundenbewertungen</p>
-
-    <h2>Das Vertrauen unserer Kunden spricht für sich</h2>
-
-    <div class="reviewStars">★★★★★</div>
-
-    <p class="reviewText">
-      Lesen Sie die Erfahrungen unserer Kunden mit dem Service, der persönlichen Beratung und der Betreuung von MAPFRE Adeje.
-    </p>
-
-    <a
-      href="https://www.google.com/search?q=mapfre+adeje+calle+grande"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="reviewButton"
-    >
-      Google-Bewertungen lesen
-    </a>
-  </div>
-</section>
   <section class="languages">
     <div class="languageContent">
       <div>
-        <p class="eyebrow">Mehrsprachige Betreuung</p>
-
-        <h2>Wir betreuen ausländische Residenten und Immobilienbesitzer auf Teneriffa</h2>
-
-        <p class="languageText">
-          Wir helfen Ihnen, Ihre Versicherungen in Ihrer Sprache abzuschließen und zu verwalten, mit persönlicher und freundlicher Betreuung in unserem Büro in Adeje.
-        </p>
+        <p class="eyebrow">Beratung in mehreren Sprachen</p>
+        <h2>Wir beraten Sie in Ihrer Sprache</h2>
       </div>
 
       <div class="languageGrid">
@@ -224,6 +163,26 @@ const languages = [
     </div>
   </section>
 </main>
+
+<footer class="footer">
+  <div class="footerContent">
+
+    <p>
+      © 2026 Versicherungen Adeje · Calle Grande 56. Alle Rechte vorbehalten.
+    </p>
+
+    <div class="footerSocial">
+      <a href="https://www.facebook.com/people/Mapfre-Adeje-Calle-Grande/61574568760634/" target="_blank">
+        Facebook
+      </a>
+
+      <a href="https://www.instagram.com/mapfreadeje" target="_blank">
+        Instagram
+      </a>
+    </div>
+
+  </div>
+</footer>
 </body>
 </html>
 
@@ -256,54 +215,43 @@ const languages = [
     text-decoration: none;
   }
 
- .siteHeader {
-  min-height: 96px;
-  padding: 18px clamp(24px, 6vw, 88px);
-  background: var(--white);
-  border-bottom: 1px solid var(--line);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
+  .siteHeader {
+    min-height: 96px;
+    padding: 18px clamp(24px, 6vw, 88px);
+    background: var(--white);
+    border-bottom: 1px solid var(--line);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
 
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  min-width: 0;
-  color: var(--black);
-  font-weight: 900;
-}
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 0;
+    color: var(--black);
+    font-weight: 900;
+  }
 
-.logoFrame {
-  width: 150px;
-  height: auto;
-  display: flex;
-  align-items: center;
-  overflow: visible;
-  flex: 0 0 150px;
-  padding: 0;
-}
+  .logoFrame {
+    display: none;
+  }
 
-.logoFrame img {
-  width: 150px;
-  height: auto;
-  display: block;
-}
-
-.brandText {
-  border-left: 1px solid #e7e7e7;
-  padding-left: 18px;
-  margin-left: 4px;
-  display: flex;
-  flex-direction: column;
-  line-height: 1.05;
-  white-space: nowrap;
-}
+  .brandText {
+    border-left: 1px solid #e7e7e7;
+    padding-left: 18px;
+    margin-left: 4px;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.05;
+    white-space: nowrap;
+    font-weight: 900;
+  }
 
   .brandText small {
     font-size: 11px;
@@ -311,6 +259,22 @@ const languages = [
     letter-spacing: .12em;
     color: #9aa3af;
     font-weight: 700;
+  }
+
+  .languageSwitcher {
+    display: flex;
+    gap: 14px;
+    margin-left: auto;
+    margin-right: 24px;
+  }
+
+  .languageSwitcher a {
+    color: #374151;
+    font-weight: 700;
+  }
+
+  .languageSwitcher a.active {
+    color: var(--red);
   }
 
   .headerActions,
@@ -323,31 +287,35 @@ const languages = [
 
   .button {
     min-height: 46px;
-    padding: 0 20px;
+    padding: 0 22px;
     border-radius: 999px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     font-weight: 900;
     font-size: 14px;
+    transition: all .2s ease;
   }
 
   .button.large {
     min-height: 58px;
-    padding: 0 28px;
+    padding: 0 30px;
     font-size: 15px;
   }
 
-  .primary {
+  .primary,
+  .cta {
     background: var(--red);
     color: white;
+    border: 2px solid var(--red);
     box-shadow: 0 14px 30px rgba(227, 6, 19, 0.2);
   }
 
-  .cta {
-  background: #f3d7d7;
-  color: #c43c3c;
-}
+  .primary:hover,
+  .cta:hover {
+    background: var(--red-dark);
+    border-color: var(--red-dark);
+  }
 
   .secondary {
     background: white;
@@ -355,18 +323,29 @@ const languages = [
     border: 2px solid var(--red);
   }
 
+  .secondary:hover {
+    background: #fff5f5;
+  }
+
   .hero {
     min-height: auto;
-    padding: clamp(30px, 5vw, 70px) clamp(24px, 6vw, 88px);
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(360px, 0.9fr);
-    gap: clamp(28px, 4vw, 56px);
-    align-items: start;
-  } 
+    padding: 50px clamp(32px, 7vw, 96px) 90px;
+    display: block;
+  }
+
+  .hero h1 {
+    margin: 0;
+    max-width: 900px;
+    font-size: clamp(48px, 6vw, 80px);
+    line-height: 0.95;
+    letter-spacing: -0.055em;
+    color: var(--heading);
+  }
 
   .heroContent {
-    max-width: 640px;
-  }
+    max-width:  none;
+    width: 100%;
+ }
 
   .eyebrow {
     margin: 0 0 16px;
@@ -375,15 +354,6 @@ const languages = [
     font-weight: 900;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-  }
-
-  h1 {
-    margin: 0;
-    max-width: 780px;
-    font-size: clamp(46px, 6vw, 82px);
-    line-height: 0.95;
-    letter-spacing: -0.055em;
-    color: var(--heading);
   }
 
   h2 {
@@ -396,7 +366,7 @@ const languages = [
 
   .lead {
     margin: 28px 0 0;
-    max-width: 650px;
+    max-width: 680px;
     color: var(--muted);
     font-size: clamp(18px, 2vw, 22px);
     line-height: 1.6;
@@ -406,73 +376,24 @@ const languages = [
     margin-top: 36px;
   }
 
-  .officeCard {
-    margin-top: 34px;
-    max-width: 560px;
-    background: white;
-    border: 1px solid var(--line);
-    border-radius: var(--radius-md);
-    padding: 22px 24px;
-    display: grid;
-    gap: 6px;
-    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.055);
+  .heroImage,
+  .heroProfile,
+  .heroCaption,
+  .team,
+  .teamImage,
+  .teamProfile,
+  .teamCaption,
+  .teamCard,
+  .reviews {
+    display: none !important;
   }
 
-  .officeCard span {
-    color: var(--muted);
-    font-weight: 700;
+  .products {
+    padding: 40px clamp(24px, 6vw, 88px) 50px;
   }
-
-  .heroImage {
-    border-radius: 28px;
-    overflow: hidden;
-    box-shadow: 0 40px 80px rgba(15, 23, 42, 0.12);
-    margin-top: 40px;
-  }
-
-  .heroImage img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-    object-position: right center;
-  }
-
-  .mapa {
-    margin-top: 20px;
-  }
-
-  .mapa iframe {
-    width: 100%;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-  }
-
-  .btnMapa {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 12px 24px;
-    background: var(--red);
-    color: white;
-    border-radius: 8px;
-    font-weight: 600;
-  }
-  @media (min-width: 981px) {
-  .officeCard {
-    max-width: 640px;
-    width: 100%;
-  }
-
-  .mapa iframe {
-    height: 320px;
-  }
-  }
-
-  .products,
-  .trust,
-  .languages,
-  .team {
-    padding: clamp(64px, 8vw, 100px) clamp(24px, 6vw, 88px);
+  
+  .languages {
+    padding: 40px clamp(24px, 6vw, 88px) 80px;
   }
 
   .sectionHeader {
@@ -514,6 +435,7 @@ const languages = [
     margin-bottom: 24px;
     display: block;
     transition: transform 0.25s ease;
+    color: var(--red);
   }
 
   .productCard h3 {
@@ -547,14 +469,6 @@ const languages = [
     transform: translateX(4px);
   }
 
-  .trust {
-    background: white;
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(320px, 0.85fr);
-    gap: clamp(32px, 6vw, 80px);
-    align-items: start;
-  }
-
   .trust > p {
     margin: 0;
     color: var(--muted);
@@ -562,63 +476,92 @@ const languages = [
     line-height: 1.7;
   }
 
-  .team {
+  .officeSection {
+    padding: 0 clamp(24px, 6vw, 88px) 70px;
+    padding-top: 8px;
     background: #f4f5f7;
-    display: grid;
-    grid-template-columns: minmax(280px, 0.8fr) minmax(0, 1fr);
-    gap: clamp(32px, 6vw, 80px);
-    align-items: center;
   }
 
-  .teamImage {
-    border-radius: 28px;
-    overflow: hidden;
-    box-shadow: 0 30px 70px rgba(15, 23, 42, 0.12);
-  }
+  .trustBar {
+  max-width: 980px;
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 24px;
+}
 
-  .teamImage img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-  }
+  .trustBar span {
+  white-space: nowrap;
+}
 
-  .teamContent p {
-    margin: 28px 0 0;
-    color: var(--muted);
-    font-size: clamp(18px, 2vw, 22px);
-    line-height: 1.6;
-  }
-
-  .teamCard {
-    margin-top: 20px;
+  .officeCard {
+    max-width: 980px;
+    margin: 0 auto;
     background: white;
     border: 1px solid var(--line);
-    border-radius: 18px;
-    padding: 18px 20px;
+    border-radius: 22px;
+    padding: 18px;
     display: grid;
-    gap: 4px;
+    grid-template-columns: 240px 1fr;
+    gap: 20px;
+    align-items: center;
+    box-shadow: 0 14px 35px rgba(0,0,0,0.06);
   }
 
-  .teamCard strong {
-    color: var(--heading);
+  .officeInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .officeInfo strong {
     font-size: 18px;
   }
 
-  .teamCard span {
+  .officeInfo span,
+  .officeCard span {
     color: var(--muted);
     font-weight: 700;
+    font-size: 15px;
+    line-height: 1.35;
+  }
+
+  .mapa {
+    margin-top: 0;
+  }
+
+  .mapa iframe {
+    width: 100%;
+    height: 250px;
+    border: 0;
+    border-radius: 16px;
+    box-shadow: none;
+  }
+
+  .btnMapa {
+    width: fit-content;
+    margin-top: 8px;
+    padding: 12px 22px;
+    background: var(--red);
+    color: white;
+    border-radius: 10px;
+    font-weight: 800;
+  }
+
+  .btnMapa:hover {
+    background: var(--red-dark);
   }
 
   .languageContent {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(280px, 0.45fr);
     gap: clamp(32px, 6vw, 80px);
-    align-items: end;
+    align-items: center;
   }
 
   .languageText {
-    margin: 28px 0 0;
+    margin-top: 0;
     max-width: 680px;
     color: var(--muted);
     font-size: clamp(18px, 2vw, 22px);
@@ -668,6 +611,79 @@ const languages = [
     color: var(--red);
   }
 
+  .footer {
+    background: #e30613;
+    padding: 30px 0;
+    margin-top: 80px;
+  }
+
+  .footerContent {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer p {
+    margin: 0;
+    color: white;
+    font-size: 14px;
+  }
+
+  .footerSocial {
+    display: flex;
+    gap: 24px;
+  }
+
+  .footerSocial a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+  }
+
+  .footerSocial a:hover {
+    opacity: 0.8;
+  }
+
+  @media (max-width: 1400px) {
+  .hero h1 {
+    max-width: 780px;
+    font-size: clamp(46px, 5.5vw, 72px);
+  }
+
+  .heroContent {
+    max-width: 820px;
+  }
+}
+
+  @media (min-width: 981px) and (max-width: 1500px) {
+  .hero h1 {
+    max-width: 760px;
+    font-size: clamp(46px, 5vw, 68px);
+  }
+
+  .lead {
+    max-width: 620px;
+  }
+
+  .hero {
+    padding-left: clamp(32px, 6vw, 76px);
+    padding-right: clamp(32px, 6vw, 76px);
+  }
+
+  .trustBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  text-align: center;
+  }
+}
+
   @media (max-width: 980px) {
     .siteHeader {
       height: auto;
@@ -677,20 +693,14 @@ const languages = [
       flex-direction: column;
     }
 
-    .hero,
+    .languageSwitcher {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
     .trust,
-    .team,
     .languageContent {
       grid-template-columns: 1fr;
-    }
-
-    .hero {
-      min-height: auto;
-    }
-
-    .heroImage {
-      order: -1;
-      height: 320px;
     }
 
     .productGrid {
@@ -700,51 +710,44 @@ const languages = [
     .languageGrid {
       margin-top: 28px;
     }
-  }
-  .languageSwitcher {
-  display: flex;
-  gap: 14px;
-  margin-left: auto;
-  margin-right: 24px;
-}
 
-.languageSwitcher a {
-  text-decoration: none;
-  color: #374151;
-  font-weight: 600;
-}
-
-.languageSwitcher a.active {
-  color: #d81e05;
-  font-weight: 700;
-}
-  @media (min-width: 1200px) {
-    .heroImage {
-      margin-top: : -15px;
+    .trustBar {
+      justify-content: center;
+      text-align: center;
+      gap: 16px;
     }
   }
-  
+
+  @media (max-width: 768px) {
+    .officeCard {
+      grid-template-columns: 1fr;
+    }
+
+    .trustBar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    }
+
+    .mapa iframe {
+      height: 260px;
+    }
+  }
+
   @media (max-width: 620px) {
     .brand {
       width: 100%;
     }
 
-    .logoFrame {
-      width: 150px;
-      height: auto;
-      flex: 0 0 150px;
-      padding: 0;
-      overflow: visible;
-    }
-
-    .logoFrame img {
-    width: 150px;
-     height: auto;
-    }
-
     .brandText {
       font-size: 15px;
       white-space: normal;
+    }
+
+    .hero {
+      padding-top: 24px;
+      padding-bottom: 24px;
     }
 
     .headerActions,
@@ -767,55 +770,53 @@ const languages = [
       grid-template-columns: 1fr;
     }
 
-    .heroImage {
-      height: 260px;
-      border-radius: 24px;
+    .languageSwitcher{
+      width: 100%;
+      justify-content: center;
     }
-    .heroImage img {
-      object-position: center top;
+    
+    .heroActions {
+      display: none;
     }
+    .trustBar {
+      text-align: center;
+      align-items: center;
+      gap: 2px;
+      margin: 0 auto 12px;
+    }
+
+    .lead {
+      margin-top: 8px;
+    }
+
+    .officeSection {
+      padding-bottom: 10px;
+    }
+
+    .products {
+      padding-top: 28px;
+    }
+
+    .footerContent {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
   }
-.reviews {
-  padding: clamp(64px, 8vw, 100px) clamp(24px, 6vw, 88px);
-  background: white;
-  text-align: center;
+
+  @media (min-width: 1200px) and (max-width: 1600px) {
+  .hero h1 {
+    max-width: 640px;
+    font-size: clamp(44px, 4.2vw, 62px);
+  }
+
+  .lead {
+    max-width: 560px;
+  }
+
+  .heroActions {
+    max-width: 640px;
+  }
 }
 
-.reviewsContent {
-  max-width: 820px;
-  margin: 0 auto;
 }
-
-.reviewStars {
-  color: #fbbf24;
-  font-size: 32px;
-  letter-spacing: 5px;
-  margin: 22px 0 14px;
-}
-
-.reviewText {
-  color: var(--muted);
-  font-size: clamp(18px, 2vw, 22px);
-  line-height: 1.6;
-  margin: 0 auto 28px;
-  max-width: 680px;
-}
-
-.reviewButton {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 54px;
-  padding: 0 28px;
-  border-radius: 999px;
-  background: #f3d7d7;
-  color: #c43c3c;
-  font-weight: 900;
-  text-decoration: none;
-}
-
-.reviewButton:hover {
-  background: #ebc8c8;
-}
-
 </style>

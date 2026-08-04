@@ -6,6 +6,18 @@
 		<link rel="icon" href="/logos/mapfre.svg" type="image/svg+xml" />
 		<meta name="generator" content={Astro.generator} />
 		<title>PRUEBA MAPFRE</title>
+
+		<!-- Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-P9VKLEZW4"></script>
+		<script is:inline>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+
+			gtag('config', 'G-P9VKLEZW4');
+		</script>
 	</head>
 	<body>
 		<slot />

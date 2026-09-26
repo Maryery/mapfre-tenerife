@@ -1,34 +1,89 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+  lang?: string;
+}
+
+const {
+  title = "Seguros Adeje | Seguros en Tenerife Sur",
+  description = "Seguros en Adeje para particulares, familias, autónomos y empresas. Atención personalizada desde nuestra oficina en Calle Grande 56, Adeje.",
+  lang = "es"
+} = Astro.props;
+---
+
 <!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" href="/logos/mapfre.svg" type="image/svg+xml" />
-		<meta name="generator" content={Astro.generator} />
-		<title>PRUEBA MAPFRE</title>
 
-		<!-- Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-3SJ9D7S4GB"></script>
-		<script is:inline>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag('js', new Date());
+<html lang={lang}>
 
-			gtag('config', 'G-3SJ9D7S4GB');
-		</script>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+
+    <link
+      rel="icon"
+      href="/logos/mapfre.svg"
+      type="image/svg+xml"
+    />
+
+    <meta
+      name="generator"
+      content={Astro.generator}
+    />
+
+    <title>{title}</title>
+
+    <meta
+      name="description"
+      content={description}
+    />
+
+
+    <!-- Google Analytics -->
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-3SJ9D7S4GB"
+    ></script>
+
+    <script is:inline>
+
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      gtag('js', new Date());
+
+      gtag('config', 'G-3SJ9D7S4GB');
+
+    </script>
+
+  </head>
+
+
+  <body>
+
+    <slot />
+
+  </body>
+
 </html>
 
+
 <style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
+
+  html,
+  body {
+    margin: 0;
+    width: 100%;
+    min-height: 100%;
+  }
+
 </style>

@@ -5,5 +5,10 @@ import sitemap from '@astrojs/sitemap';
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://www.segurosadeje.es',
+
+	redirects: {
+		'/es/seguro-coche-tenerife': '/seguro-coche-adeje',
+	},
+
 	integrations: [sitemap()],
 });

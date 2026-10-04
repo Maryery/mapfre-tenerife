@@ -4,57 +4,6 @@ const office = {
 };
 
 export const insurancePages = [
-  {
-    officeLabel: "Oficina",
-    addressLabel: "Dirección",
-    phoneLabel: "Telefono",
-    lang: "es",
-    slug: "seguro-coche-tenerife",
-    brand: "Oficina MAPFRE Adeje",
-    title: "Seguro de coche en Tenerife",
-    subtitle: "Protege tu vehiculo con una cobertura adaptada a tu vida en Tenerife.",
-    type: "Coche",
-    badge: "Seguros en Tenerife",
-    officeName: "Oficina MAPFRE Adeje",
-    officeMessage: "Atención local y presencial en Adeje",
-    phone: office.phone,
-    address: office.address,
-    navButton: "WhatsApp",
-    primaryCta: "Solicitar presupuesto",
-    secondaryCta: "Ver opciones",
-    cardTitle: "Consulta gratuita",
-    cardButton: "Contactar ahora",
-    sectionLabel: "Ventajas",
-    sectionTitle: "Mas de 15 años de experiencia",
-    finalTitle: "Necesitas ayuda con tu seguro?",
-    finalText: "Habla con la oficina MAPFRE de Adeje y recibe orientación personalizada.",
-    finalButton: "Solicitar presupuesto",
-    whatsappText: "Hola, quiero información sobre seguro de coche en Tenerife",
-    trust: ["Oficina MAPFRE Adeje", "Atención presencial", "Experiencia local"],
-    benefits: [
-      "Atención personalizada",
-      "Comparativa gratuita",
-      "Asesoramiento cercano",
-      "Cobertura en Tenerife y Canarias"
-    ],
-    cards: [
-      {
-        number: "01",
-        title: "Experiencia local",
-        text: "Te atendemos desde nuestra oficina en Adeje, con cercania y conocimiento del entorno."
-      },
-      {
-        number: "02",
-        title: "Trato cercano",
-        text: "Acompañamiento claro antes, durante y despues de contratar."
-      },
-      {
-        number: "03",
-        title: "Confianza",
-        text: "Servicio basado en integridad, compromiso y solidez."
-      }
-    ]
-  },
 
   {
     lang: "es",

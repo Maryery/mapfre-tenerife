@@ -1,89 +1,65 @@
 ---
 interface Props {
-  title?: string;
-  description?: string;
-  lang?: string;
+	title?: string;
+	description?: string;
+	lang?: string;
 }
 
 const {
-  title = "Seguros Adeje | Seguros en Tenerife Sur",
-  description = "Seguros en Adeje para particulares, familias, autónomos y empresas. Atención personalizada desde nuestra oficina en Calle Grande 56, Adeje.",
-  lang = "es"
+	title = 'Seguros Adeje | Seguros en Tenerife Sur',
+	description = 'Seguros en Adeje para particulares, familias, autónomos y empresas. Atención personalizada desde nuestra oficina en Calle Grande 56, Adeje.',
+	lang = 'es',
 } = Astro.props;
 ---
 
 <!doctype html>
 
 <html lang={lang}>
+	<head>
+		<meta charset="UTF-8" />
 
-  <head>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta charset="UTF-8" />
+		<link rel="icon" href="/logos/mapfre.svg" type="image/svg+xml" />
 
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1"
-    />
+		<meta name="generator" content={Astro.generator} />
 
-    <link
-      rel="icon"
-      href="/logos/mapfre.svg"
-      type="image/svg+xml"
-    />
+		<title>{title}</title>
 
-    <meta
-      name="generator"
-      content={Astro.generator}
-    />
+		<meta name="description" content={description} />
 
-    <title>{title}</title>
+		<link rel="canonical" href={new URL(Astro.url.pathname, Astro.site).href} />
 
-    <meta
-      name="description"
-      content={description}
-    />
+		<!-- Google Analytics -->
 
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-3SJ9D7S4GB"
+		></script>
 
-    <!-- Google Analytics -->
+		<script is:inline>
+			window.dataLayer = window.dataLayer || [];
 
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-3SJ9D7S4GB"
-    ></script>
+			function gtag() {
+				dataLayer.push(arguments);
+			}
 
-    <script is:inline>
+			gtag('js', new Date());
 
-      window.dataLayer = window.dataLayer || [];
+			gtag('config', 'G-3SJ9D7S4GB');
+		</script>
+	</head>
 
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-
-      gtag('js', new Date());
-
-      gtag('config', 'G-3SJ9D7S4GB');
-
-    </script>
-
-  </head>
-
-
-  <body>
-
-    <slot />
-
-  </body>
-
+	<body>
+		<slot />
+	</body>
 </html>
 
-
 <style>
-
-  html,
-  body {
-    margin: 0;
-    width: 100%;
-    min-height: 100%;
-  }
-
+	html,
+	body {
+		margin: 0;
+		width: 100%;
+		min-height: 100%;
+	}
 </style>

@@ -4,334 +4,217 @@ import Layout from "../../../layouts/Layout.astro";
 const phoneHref = "tel:+34822145513";
 
 const whatsappHref =
-  "https://wa.me/34646743707?text=Hello%2C%20I%20would%20like%20information%20about%20car%20insurance.";
+  "https://wa.me/34646743707?text=Hello%2C%20I%20would%20like%20information%20about%20car%20insurance";
 
 const mapsHref =
   "https://www.google.com/maps/search/?api=1&query=Calle+Grande+56+38670+Adeje+Santa+Cruz+de+Tenerife";
 ---
 
-<link
-  rel="icon"
-  href="/logos/favicon.png"
-  type="image/svg+xml"
-/>
+<link rel="icon" href="/logos/favicon.png" type="image/png" />
 
 <Layout
-  title="Car Insurance in Tenerife | Insurance Adeje"
-  description="Car insurance in Tenerife and Adeje. We help you find the right level of cover for your vehicle and your needs, with personal service from our office in Calle Grande 56, Adeje."
+  title="Car Insurance in Adeje | Seguros Adeje"
+  description="Car insurance in Adeje, Tenerife. Compare cover options with personal assistance from our office at Calle Grande 56, Adeje."
 >
-
   <main>
-
-    <!-- BACK TO ENGLISH HOME -->
+    <!-- ======================================================
+         BACK TO HOMEPAGE
+    ======================================================= -->
 
     <div class="backHomeWrapper">
-      <a href="/en/" class="backHome">
-        ← Back to Insurance Adeje
+      <a href="/" class="backHome">
+        ← Back
       </a>
     </div>
 
-
-    <!-- HERO -->
+    <!-- ======================================================
+         HERO
+    ======================================================= -->
 
     <section class="hero">
-
       <div class="heroContent">
+        <p class="eyebrow">CAR INSURANCE</p>
 
-        <p class="eyebrow">
-          CAR INSURANCE
-        </p>
-
-        <h1>
-          Car insurance in Tenerife
-        </h1>
+        <h1>Car insurance in Adeje</h1>
 
         <p class="lead">
-          We help you find car insurance suited to your vehicle and your needs,
-          with personal service from our office in South Tenerife.
+          We help you find car insurance that suits your vehicle and your needs,
+          with personal advice from our office in South Tenerife.
         </p>
 
         <div class="heroActions">
-
-          <a
-            href={phoneHref}
-            class="button primary large"
-          >
+          <a href={phoneHref} class="button primary large">
             Call us
           </a>
 
-          <a
-            href={whatsappHref}
-            class="button secondary large"
-          >
-            Request a quote on WhatsApp
+          <a href={whatsappHref} class="button secondary large">
+            Get a quote on WhatsApp
           </a>
-
         </div>
-
       </div>
 
-
-      <!-- MAR AND ANTONIO -->
+      <!-- ADVICE CARD -->
 
       <div class="contactCard">
-
         <div class="teamImage">
-
           <img
-            src="/images/mar-antonio-seguros-adeje.png"
-            alt="Mar and Antonio, personal insurance service in Adeje"
+            src="/images/seguro-coche-adeje-tenerife-sur.png"
+            alt="Car in Adeje, South Tenerife"
             loading="eager"
+            width="1200"
+            height="800"
           />
-
         </div>
 
         <div class="contactCardContent">
+          <p class="contactLabel">PERSONALISED SERVICE</p>
 
-          <p class="contactLabel">
-            PERSONAL SERVICE
-          </p>
-
-          <h3>
-            Want to know which option suits you?
-          </h3>
+          <h3>Exclusive MAPFRE agent</h3>
 
           <p class="contactText">
-            Tell us about your car and the type of protection you are looking for.
-            We will help you explore the available options.
+            Tell us about your car and the level of protection you need. We will
+            help you explore the available insurance options and cover.
           </p>
-
-          <a
-            href={whatsappHref}
-            class="button primary contactButton"
-          >
-            Talk to us
-          </a>
-
-          <p class="teamNames">
-            Mar and Antonio · Insurance Adeje
-          </p>
-
         </div>
-
       </div>
-
     </section>
 
-
-    <!-- TYPES OF CAR INSURANCE -->
+    <!-- ======================================================
+         COVER OPTIONS
+    ======================================================= -->
 
     <section class="products">
-
       <div class="sectionHeader">
+        <p class="eyebrow">COVER OPTIONS</p>
 
-        <p class="eyebrow">
-          COVER OPTIONS
-        </p>
-
-        <h2>
-          Types of car insurance and which one suits your needs
-        </h2>
+        <h2>Types of car insurance: which is right for you?</h2>
 
         <p class="sectionText">
-          Choosing the right car insurance depends on your vehicle,
-          how you use it and the level of protection you are looking for.
-          These are some of the most common options.
+          The right car insurance depends on your vehicle, how you use it and
+          the level of protection you want. Here are some of the most common
+          options.
         </p>
-
       </div>
-
 
       <div class="productGrid">
-
         <article class="productCard pinkCard">
+          <span class="productNumber">01</span>
 
-          <span class="productNumber">
-            01
-          </span>
-
-          <h3>
-            Third-party insurance
-          </h3>
+          <h3>Third-party insurance</h3>
 
           <p>
-            This is the basic level of insurance required by law.
-            It includes third-party liability for damage caused to others
-            and may include additional cover depending on the policy selected.
+            This is the basic level of insurance required by law. It includes
+            third-party liability and may offer additional cover depending on
+            the policy selected.
           </p>
-
         </article>
-
 
         <article class="productCard greenCard">
+          <span class="productNumber">02</span>
 
-          <span class="productNumber">
-            02
-          </span>
-
-          <h3>
-            Extended third-party insurance
-          </h3>
+          <h3>Extended third-party insurance</h3>
 
           <p>
-            This extends third-party protection with additional cover
-            that may include windows, theft or fire, depending on the
-            policy selected.
+            Provides additional protection beyond basic third-party insurance,
+            potentially including glass, theft or fire, depending on the policy.
           </p>
-
         </article>
-
 
         <article class="productCard">
+          <span class="productNumber">03</span>
 
-          <span class="productNumber">
-            03
-          </span>
-
-          <h3>
-            Comprehensive insurance
-          </h3>
+          <h3>Comprehensive insurance</h3>
 
           <p>
-            Provides broader protection and may include damage to your
-            own vehicle, according to the terms and conditions of the policy.
+            Offers broader protection and may include damage to your own
+            vehicle, subject to the policy terms and conditions.
           </p>
-
         </article>
-
 
         <article class="productCard greyCard">
+          <span class="productNumber">04</span>
 
-          <span class="productNumber">
-            04
-          </span>
-
-          <h3>
-            Comprehensive insurance with excess
-          </h3>
+          <h3>Comprehensive insurance with an excess</h3>
 
           <p>
-            Provides broad protection while you agree to pay a specified
-            amount towards the cost of certain claims.
+            Provides broad protection while you agree to pay a specified excess
+            for certain claims.
           </p>
-
         </article>
-
       </div>
-
     </section>
 
-
-    <!-- OTHER VEHICLES -->
+    <!-- ======================================================
+         OTHER VEHICLES
+    ======================================================= -->
 
     <section class="specialSection">
-
       <div class="sectionHeader">
+        <p class="eyebrow">OTHER VEHICLE OPTIONS</p>
 
-        <p class="eyebrow">
-          OTHER CAR INSURANCE
-        </p>
-
-        <h2>
-          Insurance solutions for other types of vehicles
-        </h2>
+        <h2>Insurance for other types of cars</h2>
 
         <p class="sectionText">
           We can also help if you drive an electric, hybrid or classic car.
         </p>
-
       </div>
-
 
       <div class="specialGrid">
-
         <article class="specialCard electricCard">
-
           <div class="specialTag">
-
             <span class="greenDot"></span>
-
-            ELECTRIC & HYBRID CARS
-
+            ELECTRIC AND HYBRID CARS
           </div>
 
-          <h3>
-            Insurance for electric and hybrid cars
-          </h3>
+          <h3>Insurance for electric and hybrid cars</h3>
 
           <p>
-            If you drive an electric or hybrid vehicle, we can help you
-            explore the available options and the cover that best suits
-            your needs.
+            If you drive an electric or hybrid car, we can help you explore the
+            available options and find cover suited to your needs.
           </p>
 
-          <a
-            href={whatsappHref}
-            class="productLink"
-          >
-            More information →
+          <a href={whatsappHref} class="productLink">
+            Find out more →
           </a>
-
         </article>
-
 
         <article class="specialCard classicCard">
-
           <div class="specialTag">
-
             <span class="pinkDot"></span>
-
             CLASSIC CARS
-
           </div>
 
-          <h3>
-            Insurance for classic cars
-          </h3>
+          <h3>Classic car insurance</h3>
 
           <p>
-            If you own a classic car, we can help you explore the available
-            options taking into account its characteristics, age and use.
+            If you own a classic car, we can help you explore insurance options
+            based on its characteristics, age and use.
           </p>
 
-          <a
-            href={whatsappHref}
-            class="productLink"
-          >
-            More information →
+          <a href={whatsappHref} class="productLink">
+            Find out more →
           </a>
-
         </article>
-
       </div>
-
     </section>
 
-
-    <!-- VISIT US -->
+    <!-- ======================================================
+         VISIT US
+    ======================================================= -->
 
     <section class="visitSection">
-
       <div class="visitContent">
-
         <div class="visitText">
+          <p class="eyebrow">VISIT US</p>
 
-          <p class="eyebrow">
-            VISIT US
-          </p>
-
-          <h2>
-            Prefer to talk in person?
-          </h2>
+          <h2>Prefer to speak to us in person?</h2>
 
           <p class="visitDescription">
-            Visit us at our office in Adeje. Tell us about your car and
-            the type of protection you are looking for, and we will help
-            you explore the available options.
+            Visit our office and tell us about your car and the protection you
+            need. We will help you explore the available options.
           </p>
 
           <div class="visitActions">
-
             <a
               href={mapsHref}
               target="_blank"
@@ -341,26 +224,19 @@ const mapsHref =
               Get directions
             </a>
 
-            <a
-              href={phoneHref}
-              class="button secondary large"
-            >
+            <a href={phoneHref} class="button secondary large">
               Call us
             </a>
-
           </div>
-
         </div>
 
-
-        <!-- OFFICE DETAILS -->
+        <!-- ==================================================
+             OFFICE DETAILS
+        =================================================== -->
 
         <div class="officeCard">
-
           <div class="officeTop">
-
             <div class="officeIcon">
-
               <svg
                 viewBox="0 0 24 24"
                 width="28"
@@ -375,59 +251,41 @@ const mapsHref =
                 <path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"></path>
                 <circle cx="12" cy="10" r="2.5"></circle>
               </svg>
-
             </div>
-
             <div>
-
-              <span class="officeLabel">
-                OUR OFFICE
-              </span>
-
-              <h3>
-                Insurance Adeje
-              </h3>
-
+              <span class="officeLabel">OUR OFFICE</span>
+              <h3>Seguros Adeje</h3>
+              <p class="officeMapfre">Exclusive MAPFRE agent</p>
             </div>
-
           </div>
 
-
           <div class="officeDetails">
-
             <p>
-              <strong>
-                Address
-              </strong>
-
-              Calle Grande, 56<br />
-              38670 Adeje<br />
+              <strong>Address</strong>
+              Calle Grande, 56
+              <br />
+              38670 Adeje
+              <br />
               Santa Cruz de Tenerife
             </p>
-
-
             <p>
-              <strong>
-                Opening hours
-              </strong>
-
-              Monday to Thursday · 9:00 – 17:00<br />
+              <strong>Opening hours</strong>
+              Monday to Thursday · 9:00 – 17:00
+              <br />
               Friday · 9:00 – 15:00
             </p>
 
-
             <p>
-              <strong>
-                Phone
-              </strong>
-
-              <a href={phoneHref}>
-                822 145 513
-              </a>
+              <strong>Contact numbers</strong>
+              Office: <a href="tel:+34822145513">822 145 513</a>
+              <br />
+              Antonio · Office representative:
+              <a href="tel:+34646743707">646 743 707</a>
+              <br />
+              Mar · Sales adviser:
+              <a href="tel:+34671492025">671 492 025</a>
             </p>
-
           </div>
-
 
           <a
             href={mapsHref}
@@ -435,56 +293,83 @@ const mapsHref =
             rel="noopener noreferrer"
             class="officeMapLink"
           >
-            View location on Google Maps →
+            View on Google Maps →
           </a>
-
         </div>
-
       </div>
-
     </section>
 
-
-    <!-- FOOTER -->
+    <!-- ======================================================
+         FOOTER
+    ======================================================= -->
 
     <footer class="footer">
-
       <div class="footerContent">
-
-        <p>
-          © 2026 Insurance Adeje · Calle Grande 56. All rights reserved.
-        </p>
+        <p>© 2026 Seguros Adeje · Calle Grande 56. All rights reserved.</p>
 
         <div class="footerSocial">
-
           <a
             href="https://www.facebook.com/people/Mapfre-Adeje-Calle-Grande/61574568760634/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Seguros Adeje on Facebook"
           >
-            Facebook
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.45 2.89h-2.33v6.99A10 10 0 0 0 22 12Z" />
+            </svg>
+            <span>Facebook</span>
           </a>
 
           <a
             href="https://www.instagram.com/mapfreadejeseguros"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Seguros Adeje on Instagram"
           >
-            Instagram
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <rect x="3" y="3" width="18" height="18" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle
+                cx="17.5"
+                cy="6.5"
+                r="1"
+                fill="currentColor"
+                stroke="none"
+              />
+            </svg>
+            <span>Instagram</span>
           </a>
-
         </div>
-
       </div>
 
+      <p class="footerDisclaimer">
+        Information-only website. Insurance policies are purchased through the
+        insurer’s authorised channels.
+      </p>
     </footer>
-
   </main>
-
 </Layout>
 
-
 <style>
+  /* =========================================================
+                   COLORES
+                ========================================================= */
 
   :global(:root) {
     --red: #e30613;
@@ -496,8 +381,10 @@ const mapsHref =
     --black: #1f2937;
     --text: #4b5563;
     --heading: #202938;
+
     --pink: #fff0f2;
     --pink-border: #f7dfe3;
+
     --green: #a8c900;
     --green-soft: #f3f7df;
   }
@@ -508,8 +395,11 @@ const mapsHref =
 
   :global(body) {
     margin: 0;
+
     font-family: Arial, Helvetica, sans-serif;
+
     background: var(--bg);
+
     color: var(--black);
   }
 
@@ -517,64 +407,91 @@ const mapsHref =
     text-decoration: none;
   }
 
-
-  /* BACK HOME */
+  /* =========================================================
+                   VOLVER A LA PRINCIPAL
+                ========================================================= */
 
   .backHomeWrapper {
     padding: 24px clamp(32px, 7vw, 96px) 0;
+
     background: var(--bg);
   }
 
   .backHome {
     display: inline-flex;
+
     align-items: center;
+
     color: var(--red);
+
     font-size: 14px;
+
     font-weight: 900;
-    transition: color .2s ease, transform .2s ease;
+
+    transition:
+      color 0.2s ease,
+      transform 0.2s ease;
   }
 
   .backHome:hover {
     color: var(--red-dark);
+
     transform: translateX(-3px);
   }
 
-
-  /* BUTTONS */
+  /* =========================================================
+                   BOTONES
+                ========================================================= */
 
   .button {
     min-height: 46px;
+
     padding: 0 22px;
+
     border-radius: 999px;
+
     display: inline-flex;
+
     align-items: center;
+
     justify-content: center;
+
     font-weight: 900;
+
     font-size: 14px;
-    transition: all .2s ease;
+
+    transition: all 0.2s ease;
   }
 
   .button.large {
     min-height: 58px;
+
     padding: 0 30px;
+
     font-size: 15px;
   }
 
   .primary {
     background: var(--red);
+
     color: white;
+
     border: 2px solid var(--red);
-    box-shadow: 0 14px 30px rgba(227, 6, 19, .2);
+
+    box-shadow: 0 14px 30px rgba(227, 6, 19, 0.2);
   }
 
   .primary:hover {
     background: var(--red-dark);
+
     border-color: var(--red-dark);
   }
 
   .secondary {
     background: white;
+
     color: var(--red);
+
     border: 2px solid var(--red);
   }
 
@@ -582,89 +499,128 @@ const mapsHref =
     background: #fff5f5;
   }
 
-
-  /* HERO */
+  /* =========================================================
+                   HERO
+                ========================================================= */
 
   .hero {
     min-height: auto;
-    padding: 38px clamp(32px, 7vw, 96px) 90px;
+    padding: 28px clamp(32px, 7vw, 96px) 20px;
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(360px, .55fr);
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(360px, 0.55fr);
     gap: clamp(45px, 6vw, 90px);
     align-items: center;
   }
 
   .heroContent {
     max-width: none;
+
     width: 100%;
   }
 
   .eyebrow {
     margin: 0 0 16px;
+
     color: var(--red);
+
     font-size: 13px;
+
     font-weight: 900;
-    letter-spacing: .08em;
+
+    letter-spacing: 0.08em;
+
     text-transform: uppercase;
   }
 
   .hero h1 {
     margin: 0;
+
     max-width: 900px;
+
     font-size: clamp(48px, 6vw, 80px);
-    line-height: .95;
-    letter-spacing: -.055em;
+
+    line-height: 0.95;
+
+    letter-spacing: -0.055em;
+
     color: var(--heading);
   }
 
   h2 {
     margin: 0;
+
     font-size: clamp(36px, 5vw, 62px);
+
     line-height: 1;
-    letter-spacing: -.045em;
+
+    letter-spacing: -0.045em;
+
     color: var(--heading);
   }
 
   .lead {
     margin: 28px 0 0;
+
     max-width: 680px;
+
     color: var(--muted);
+
     font-size: clamp(18px, 2vw, 22px);
+
     line-height: 1.6;
   }
 
   .heroActions {
     display: flex;
+
     gap: 12px;
+
     align-items: center;
+
     flex-wrap: wrap;
-    margin-top: 36px;
+
+    margin-top: 28px;
   }
 
-
-  /* CONTACT CARD */
+  /* =========================================================
+                   TARJETA MAR Y ANTONIO
+                ========================================================= */
 
   .contactCard {
     overflow: hidden;
+
     background: var(--pink);
+
     border: 1px solid var(--pink-border);
+
     border-radius: 26px;
-    box-shadow: 0 18px 40px rgba(15, 23, 42, .07);
+
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.07);
   }
 
   .teamImage {
     width: 100%;
+
     aspect-ratio: 3 / 2;
+
     overflow: hidden;
+
     background: #f7f7f7;
   }
 
   .teamImage img {
     display: block;
+
     width: 100%;
+
     height: 100%;
+
     object-fit: cover;
+
     object-position: center;
+
     transform: none;
   }
 
@@ -674,46 +630,73 @@ const mapsHref =
 
   .contactLabel {
     margin: 0 0 13px;
+
     color: var(--red);
+
     font-size: 12px;
+
     font-weight: 900;
-    letter-spacing: .08em;
+
+    letter-spacing: 0.08em;
   }
 
   .contactCard h3 {
     margin: 0 0 14px;
+
     color: var(--heading);
-    font-size: 28px;
-    font-weight: 900;
-    line-height: 1.08;
-    letter-spacing: -.03em;
+
+    font-family: inherit;
+
+    font-size: clamp(20px, 1.7vw, 24px);
+
+    font-weight: 700;
+
+    line-height: 1.2;
+
+    letter-spacing: -0.025em;
+  }
+
+  @media (min-width: 768px) {
+    .contactCard h3 {
+      white-space: nowrap;
+    }
   }
 
   .contactText {
     margin: 0;
+
     color: var(--muted);
+
     font-size: 16px;
+
     line-height: 1.55;
   }
 
   .contactButton {
     width: 100%;
+
     margin-top: 22px;
   }
 
   .teamNames {
     margin: 15px 0 0;
+
     color: var(--muted);
+
     font-size: 13px;
+
     font-weight: 700;
+
     text-align: center;
   }
 
-
-  /* PRODUCTS */
+  /* =========================================================
+                   MODALIDADES
+                ========================================================= */
 
   .products {
-    padding: 70px clamp(24px, 6vw, 88px) 80px;
+    padding: 36px clamp(24px, 6vw, 88px) 60px;
+
     background: #f4f5f7;
   }
 
@@ -723,46 +706,64 @@ const mapsHref =
 
   .sectionText {
     margin: 26px 0 0;
+
     max-width: 760px;
+
     color: var(--muted);
+
     font-size: clamp(18px, 2vw, 22px);
+
     line-height: 1.6;
   }
 
   .productGrid {
-    margin-top: 42px;
+    margin-top: 32px;
+
     display: grid;
+
     grid-template-columns: repeat(4, minmax(0, 1fr));
+
     gap: 22px;
   }
 
   .productCard {
-    min-height: 280px;
+    min-height: 260px;
+
     background: white;
+
     border: 1px solid #e5e7eb;
+
     border-radius: 26px;
-    padding: 34px 28px;
+
+    padding: 30px 26px;
+
     display: flex;
+
     flex-direction: column;
+
     transition:
-      transform .25s ease,
-      border-color .25s ease,
-      box-shadow .25s ease;
+      transform 0.25s ease,
+      border-color 0.25s ease,
+      box-shadow 0.25s ease;
   }
 
   .productCard:hover {
     transform: translateY(-4px);
+
     border-color: var(--red);
-    box-shadow: 0 18px 40px rgba(15, 23, 42, .08);
+
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
   }
 
   .pinkCard {
     background: var(--pink);
+
     border-color: var(--pink-border);
   }
 
   .greenCard {
     background: var(--green-soft);
+
     border-color: #e4ebc1;
   }
 
@@ -772,10 +773,14 @@ const mapsHref =
 
   .productNumber {
     margin-bottom: 24px;
+
     color: var(--red);
+
     font-size: 13px;
+
     font-weight: 900;
-    letter-spacing: .08em;
+
+    letter-spacing: 0.08em;
   }
 
   .greenCard .productNumber {
@@ -784,68 +789,96 @@ const mapsHref =
 
   .productCard h3 {
     margin: 0 0 14px;
+
     font-size: 24px;
+
     font-weight: 900;
+
     color: var(--heading);
   }
 
   .productCard p {
     margin: 0;
+
     color: var(--muted);
+
     font-size: 16px;
+
     line-height: 1.5;
+
     font-weight: 600;
   }
 
-
-  /* OTHER VEHICLES */
+  /* =========================================================
+                   OTROS VEHÍCULOS
+                ========================================================= */
 
   .specialSection {
-    padding: 80px clamp(24px, 6vw, 88px);
+    padding: 60px clamp(24px, 6vw, 88px);
+
     background: white;
   }
 
   .specialGrid {
-    margin-top: 42px;
+    margin-top: 32px;
+
     display: grid;
+
     grid-template-columns: repeat(2, minmax(0, 1fr));
+
     gap: 22px;
   }
 
   .specialCard {
-    min-height: 290px;
+    min-height: 260px;
+
     border-radius: 26px;
-    padding: 34px 28px;
+
+    padding: 30px 26px;
+
     display: flex;
+
     flex-direction: column;
   }
 
   .electricCard {
     background: var(--green-soft);
+
     border: 1px solid #e4ebc1;
   }
 
   .classicCard {
     background: var(--pink);
+
     border: 1px solid var(--pink-border);
   }
 
   .specialTag {
     margin-bottom: 24px;
+
     display: flex;
+
     align-items: center;
+
     gap: 9px;
+
     color: var(--muted);
+
     font-size: 12px;
+
     font-weight: 900;
-    letter-spacing: .08em;
+
+    letter-spacing: 0.08em;
   }
 
   .greenDot,
   .pinkDot {
     width: 10px;
+
     height: 10px;
+
     border-radius: 50%;
+
     display: block;
   }
 
@@ -859,54 +892,71 @@ const mapsHref =
 
   .specialCard h3 {
     margin: 0 0 14px;
+
     font-size: 24px;
+
     font-weight: 900;
+
     color: var(--heading);
   }
 
   .specialCard p {
     margin: 0;
+
     color: var(--muted);
+
     font-size: 16px;
+
     line-height: 1.5;
+
     font-weight: 600;
   }
 
   .productLink {
     display: inline-block;
+
     margin-top: auto;
+
     padding-top: 24px;
+
     color: var(--red);
+
     font-weight: 900;
+
     font-size: 17px;
-    transition: all .2s ease;
+
+    transition: all 0.2s ease;
   }
 
   .productLink:hover {
     color: var(--red-dark);
+
     transform: translateX(4px);
   }
 
-
-  /* VISIT */
+  /* =========================================================
+                   VEN A VERNOS
+                ========================================================= */
 
   .visitSection {
-    padding: 90px clamp(24px, 6vw, 88px);
-    background:
-      linear-gradient(
-        110deg,
-        #fff0f2 0%,
-        #fff7f8 58%,
-        #f3f7df 100%
-      );
+    padding: 60px clamp(24px, 6vw, 88px);
+
+    background: linear-gradient(110deg, #fff0f2 0%, #fff7f8 58%, #f3f7df 100%);
   }
 
   .visitContent {
     max-width: 1100px;
+
     margin: 0 auto;
+
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(340px, .7fr);
+
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(340px, 0.7fr);
+
     gap: clamp(45px, 7vw, 90px);
+
     align-items: center;
   }
 
@@ -916,63 +966,95 @@ const mapsHref =
 
   .visitDescription {
     margin: 28px 0 0;
+
     max-width: 620px;
+
     color: var(--muted);
+
     font-size: clamp(18px, 2vw, 22px);
+
     line-height: 1.6;
   }
 
   .visitActions {
     margin-top: 34px;
+
     display: flex;
+
     flex-wrap: wrap;
+
     gap: 12px;
   }
 
-
-  /* OFFICE CARD */
+  /* =========================================================
+                   TARJETA OFICINA
+                ========================================================= */
 
   .officeCard {
     background: white;
-    border: 1px solid rgba(32, 41, 56, .08);
+
+    border: 1px solid rgba(32, 41, 56, 0.08);
+
     border-radius: 26px;
+
     padding: 32px;
-    box-shadow: 0 18px 45px rgba(15, 23, 42, .08);
+
+    box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
   }
 
   .officeTop {
     display: flex;
+
     align-items: center;
+
     gap: 17px;
+
     padding-bottom: 24px;
+
     border-bottom: 1px solid var(--line);
   }
 
   .officeIcon {
     width: 58px;
+
     height: 58px;
+
     flex: 0 0 58px;
+
     border-radius: 50%;
+
     display: flex;
+
     align-items: center;
+
     justify-content: center;
+
     background: var(--green-soft);
+
     color: #819b00;
   }
 
   .officeLabel {
     display: block;
+
     margin-bottom: 5px;
+
     color: var(--red);
+
     font-size: 11px;
+
     font-weight: 900;
-    letter-spacing: .08em;
+
+    letter-spacing: 0.08em;
   }
 
   .officeTop h3 {
     margin: 0;
+
     color: var(--heading);
+
     font-size: 25px;
+
     font-weight: 900;
   }
 
@@ -982,60 +1064,85 @@ const mapsHref =
 
   .officeDetails p {
     margin: 20px 0 0;
+
     color: var(--muted);
+
     font-size: 15px;
+
     line-height: 1.55;
+
     font-weight: 600;
   }
 
   .officeDetails strong {
     display: block;
+
     margin-bottom: 4px;
+
     color: var(--heading);
+
     font-size: 14px;
+
     font-weight: 900;
   }
 
   .officeDetails a {
     color: var(--red);
+
     font-weight: 900;
   }
 
   .officeMapLink {
     display: inline-block;
+
     margin-top: 26px;
+
     color: var(--red);
+
     font-size: 16px;
+
     font-weight: 900;
-    transition: all .2s ease;
+
+    transition: all 0.2s ease;
   }
 
   .officeMapLink:hover {
     color: var(--red-dark);
+
     transform: translateX(4px);
   }
 
+  .officeMapfre {
+    margin: 6px 0 0;
+    color: var(--muted);
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.4;
+  }
 
-  /* FOOTER */
+  /* =========================================================
+                   FOOTER
+                ========================================================= */
 
   .footer {
     background: var(--red);
-    color: white;
-    padding: 30px clamp(24px, 6vw, 88px);
+    color: #fff;
+    padding: 30px 24px;
   }
 
   .footerContent {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 30px;
+    gap: 24px;
   }
 
   .footer p {
     margin: 0;
-    color: white;
+    color: #fff;
     font-size: 14px;
     line-height: 1.5;
   }
@@ -1043,41 +1150,75 @@ const mapsHref =
   .footerSocial {
     display: flex;
     align-items: center;
-    gap: 32px;
+    gap: 28px;
   }
 
   .footerSocial a {
-    color: white;
-    font-size: 16px;
-    font-weight: 900;
-    transition: opacity .2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
   }
 
   .footerSocial a:hover {
-    opacity: .75;
+    opacity: 0.75;
   }
 
+  .footerSocial svg {
+    display: block;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+  }
 
-  /* RESPONSIVE */
+  .footer .footerDisclaimer {
+    max-width: 1200px;
+    margin: 18px auto 0;
+    padding-top: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    color: #fff;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  @media (max-width: 600px) {
+    .footerContent {
+      flex-direction: column;
+      gap: 18px;
+      text-align: center;
+    }
+
+    .footerSocial {
+      justify-content: center;
+      gap: 24px;
+    }
+  }
+
+  /* =========================================================
+                   RESPONSIVE ESCRITORIO
+                ========================================================= */
 
   @media (max-width: 1400px) {
-
     .hero h1 {
       max-width: 780px;
+
       font-size: clamp(46px, 5.5vw, 72px);
     }
 
     .heroContent {
       max-width: 820px;
     }
-
   }
 
-
   @media (min-width: 981px) and (max-width: 1500px) {
-
     .hero h1 {
       max-width: 760px;
+
       font-size: clamp(46px, 5vw, 68px);
     }
 
@@ -1087,16 +1228,15 @@ const mapsHref =
 
     .hero {
       padding-left: clamp(32px, 6vw, 76px);
+
       padding-right: clamp(32px, 6vw, 76px);
     }
-
   }
 
-
   @media (min-width: 1200px) and (max-width: 1600px) {
-
     .hero h1 {
       max-width: 640px;
+
       font-size: clamp(44px, 4.2vw, 62px);
     }
 
@@ -1107,43 +1247,54 @@ const mapsHref =
     .heroActions {
       max-width: 640px;
     }
-
   }
 
+  /* =========================================================
+                   PORTÁTIL
+                ========================================================= */
 
   @media (max-width: 1100px) {
-
     .productGrid {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
-
   }
 
+  /* =========================================================
+                   TABLET / IPAD
+                ========================================================= */
 
   @media (max-width: 980px) {
-
     .hero {
       grid-template-columns: 1fr;
-      gap: 50px;
+
+      gap: 34px;
     }
 
     .contactCard {
       width: 100%;
+
       max-width: 650px;
     }
 
     .teamImage {
       width: 100%;
+
       height: auto;
+
       aspect-ratio: 3 / 2;
     }
 
     .teamImage img {
       display: block;
+
       width: 100%;
+
       height: 100%;
+
       object-fit: cover;
+
       object-position: center;
+
       transform: none;
     }
 
@@ -1154,25 +1305,30 @@ const mapsHref =
     .officeCard {
       max-width: 620px;
     }
-
   }
 
+  /* =========================================================
+                   MÓVIL
+                ========================================================= */
 
   @media (max-width: 620px) {
-
     .backHomeWrapper {
       padding: 18px 22px 0;
     }
 
     .hero {
-      padding-top: 24px;
-      padding-bottom: 40px;
-      gap: 42px;
+      padding-top: 20px;
+
+      padding-bottom: 24px;
+
+      gap: 28px;
     }
 
     .heroActions {
       width: 100%;
+
       flex-direction: column;
+
       align-items: stretch;
     }
 
@@ -1181,7 +1337,7 @@ const mapsHref =
     }
 
     .hero h1 {
-      letter-spacing: -.04em;
+      letter-spacing: -0.04em;
     }
 
     .lead {
@@ -1196,6 +1352,10 @@ const mapsHref =
     .products,
     .specialSection,
     .visitSection {
+      padding: 38px 22px;
+    }
+
+    .hero {
       padding-left: 22px;
       padding-right: 22px;
     }
@@ -1207,15 +1367,21 @@ const mapsHref =
 
     .teamImage {
       width: 100%;
+
       height: auto;
+
       aspect-ratio: 3 / 2;
     }
 
     .teamImage img {
       width: 100%;
+
       height: 100%;
+
       object-fit: cover;
+
       object-position: center;
+
       transform: none;
     }
 
@@ -1229,14 +1395,15 @@ const mapsHref =
 
     .footerContent {
       flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
       gap: 20px;
+      text-align: center;
     }
 
     .footerSocial {
+      width: 100%;
+      justify-content: center;
       gap: 24px;
     }
-
   }
-
 </style>

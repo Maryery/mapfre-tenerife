@@ -1,17 +1,62 @@
 ---
 const phone = "+34 822 145 513";
+
 const phoneHref = "tel:+34822145513";
-const whatsappHref = "https://wa.me/34646743707?text=Bonjour%2C%20je%20souhaite%20obtenir%20des%20informations%20sur%20les%20assurances%20MAPFRE.";
+
+const whatsappHref =
+  "https://wa.me/34646743707?text=Bonjour%2C%20je%20souhaite%20obtenir%20des%20informations%20sur%20les%20assurances%20MAPFRE.";
 
 const products = [
-  { title: "Auto", text: "Protection pour votre véhicule.", icon: "/icons/car.svg" },
-  { title: "Habitation", text: "Votre logement toujours protégé.", icon: "/icons/home.svg" },
-  { title: "Santé", text: "Accès aux soins de santé privés.", icon: "/icons/health.svg" },
-  { title: "Vie", text: "La tranquillité d’esprit pour votre famille.", icon: "/icons/heart.svg" },
-  { title: "Épargne et Investissement", text: "Des solutions pour votre avenir.", icon: "/icons/chart.svg" },
-  { title: "Bateaux", text: "Naviguez en toute sérénité.", icon: "/icons/boat.svg" },
-  { title: "Entreprises", text: "Assurances pour entreprises et travailleurs indépendants.", icon: "/icons/building.svg" },
-  { title: "Prévoyance Obsèques", text: "Tout est organisé pour votre famille.", icon: "/icons/shield.svg" },
+  {
+    title: "Auto",
+    text: "Une protection adaptée à votre véhicule.",
+    icon: "/icons/car.svg",
+    href: "/fr/assurance-auto-adeje/",
+    linkText: "Voir l’assurance auto →",
+    internal: true,
+  },
+
+  {
+    title: "Habitation",
+    text: "Protégez votre logement.",
+    icon: "/icons/home.svg",
+  },
+
+  {
+    title: "Santé",
+    text: "Accédez aux soins de santé privés.",
+    icon: "/icons/health.svg",
+  },
+
+  {
+    title: "Vie",
+    text: "La tranquillité d’esprit pour votre famille.",
+    icon: "/icons/heart.svg",
+  },
+
+  {
+    title: "Épargne et investissement",
+    text: "Des solutions pour votre avenir.",
+    icon: "/icons/chart.svg",
+  },
+
+  {
+    title: "Bateaux",
+    text: "Naviguez en toute sérénité.",
+    icon: "/icons/boat.svg",
+  },
+
+  {
+    title: "Entreprises",
+    text: "Des assurances pour les entreprises et les indépendants.",
+    icon: "/icons/building.svg",
+  },
+
+  {
+    title: "Obsèques",
+    text: "Une organisation anticipée pour vos proches.",
+    icon: "/icons/shield.svg",
+  },
 ];
 
 const languages = [
@@ -21,180 +66,360 @@ const languages = [
   { flag: "/flags/fr.svg", label: "Français", href: "/fr/" },
 ];
 ---
+
 <html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" href="/logos/favicon.png" type="image/svg+xml" />
-  <title>Assurances à Adeje | Conseil personnalisé à Tenerife</title>
-  <meta
-    name="description"
-    content="Conseil en assurance à Adeje. Solutions pour particuliers, familles, travailleurs indépendants, commerces et entreprises à Tenerife."
-  />
-</head>
+  <head>
+    <meta charset="UTF-8" />
 
-<body>
-<header class="siteHeader">
-  <a href="/" class="brand" aria-label="MAPFRE Adeje">
-    <span class="brandText">
-      <small>TENERIFE SUD</small>
-      Assurances Adeje · Calle Grande 56
-    </span>
-  </a>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <nav class="languageSwitcher">
-    <a href="/">ES</a>
-    <a href="/en/">EN</a>
-    <a href="/de/">DE</a>
-    <a href="/it/">IT</a>
-    <a href="/fr/" class="active">FR</a>
-  </nav>
+    <link rel="icon" href="/logos/favicon.png" type="image/svg+xml" />
 
-  <nav class="headerActions">
-    <a href={phoneHref} class="button cta">Appelez-nous {phone}</a>
-    <a href={whatsappHref} class="button secondary">WhatsApp</a>
-  </nav>
-</header>
+    <title>
+    Assurances à Adeje | Conseils personnalisés à Tenerife
+  </title>
 
-<main>
-  <section class="hero">
+    <meta
+      name="description"
+      content="Conseils en assurance à Adeje, Tenerife. Solutions pour particuliers, familles, indépendants et entreprises."
+    />
 
-    <div class="heroContent">
-      <p class="eyebrow">AGENCE D’ASSURANCE À ADEJE</p>
+    <!-- Google Analytics -->
 
-      <h1>Protection et sérénité pour votre famille, votre logement et votre activité</h1>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-3SJ9D7S4GB"
+    ></script>
 
-      <p class="lead">
-        Assurances pour particuliers, travailleurs indépendants et entreprises à Adeje.
-      </p>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
 
-      <div class="heroActions">
-        <a href={phoneHref} class="button primary large">Appelez-nous maintenant</a>
-        <a href={whatsappHref} class="button secondary large">Écrivez-nous sur WhatsApp</a>
-      </div>
-    </div>
+      function gtag() {
+        dataLayer.push(arguments);
+      }
 
-  </section>
+      gtag("js", new Date());
 
-  <section class="officeSection">
-    <div class="trustBar">
-      <p>✓ Agence physique à Adeje</p>
-      <p>✓ Devis sans engagement</p>
-      <p>✓ Accueil en présentiel et multilingue</p>
-      <p>✓ Gestion des sinistres et assistance</p>
-    </div>
+      gtag("config", "G-3SJ9D7S4GB");
+    </script>
+  </head>
 
-    <div class="officeCard">
+  <body>
+    <!-- ======================================================
+       HEADER
+  ======================================================= -->
 
-      <div class="officeInfo">
-        <strong>Notre agence à Adeje</strong>
-        <span>📍 Calle Grande 56 · Adeje</span>
-        <span>🌍 Accueil en présentiel et multilingue</span>
-        <span>🕒 Lun-Jeu 9:00-19:00 · Ven 9:00-17:00</span>
+    <header class="siteHeader">
+      <a href="/fr/" class="brand" aria-label="Seguros Adeje, Calle Grande 56">
+        <span class="brandName">Seguros Adeje</span>
+        <span class="brandAddress">Calle Grande, 56 · Centre d’Adeje</span>
+      </a>
+      <nav class="languageSwitcher">
+        <a href="/">ES</a>
 
-        <a
-          href="https://maps.google.com/?q=Calle+Grande+56+Adeje"
-          target="_blank"
-          class="btnMapa">
-          Itinéraire
+        <a href="/en/">EN</a>
+
+        <a href="/de/">DE</a>
+
+        <a href="/it/">IT</a>
+
+        <a href="/fr/" class="active">
+          FR
         </a>
-      </div>
+      </nav>
+    </header>
 
-      <div class="mapa">
-        <iframe
-          src="https://www.google.com/maps?q=Calle+Grande+56+Adeje&output=embed"
-          loading="lazy"
-          allowfullscreen="">
-        </iframe>
-      </div>
+    <!-- ======================================================
+       MAIN
+  ======================================================= -->
 
-    </div>
-  </section>
+    <main>
+      <!-- ====================================================
+         HERO
+    ===================================================== -->
 
-  <section class="products">
-    <div class="sectionHeader">
-      <p class="eyebrow">Nos assurances</p>
-      <h2>Votre agence de confiance pour tous vos besoins en assurance</h2>
-    </div>
+      <section class="hero">
+        <div class="heroContent">
+          <p class="eyebrow">SUD DE TENERIFE</p>
 
-    <div class="productGrid">
-      {products.map((product) => (
-        <article class="productCard">
-          <img src={product.icon} alt={product.title} class="productIcon" />
+          <h1>
+            Agence d’assurances
+            <br />à Adeje
+          </h1>
 
-          <h3>{product.title}</h3>
+          <p class="lead">
+            <strong>Votre agence MAPFRE dans le sud de Tenerife.</strong>
+            <br />
+            Assurances auto, habitation, santé, vie et obsèques. Solutions
+            d’épargne. Assurances pour les entreprises.
+            <br />
+            Nous vous conseillons dans notre agence située Calle Grande, 56.
+          </p>
 
-          <p>{product.text}</p>
+          <div class="heroActions">
+            <a href={whatsappHref} class="button primary large">
+              Demander un devis sur WhatsApp
+            </a>
+
+            <a href={phoneHref} class="button secondary large">
+              Appeler · 822 145 513
+            </a>
+          </div>
+        </div>
+
+        <figure class="heroPortrait">
+          <img
+            src="/images/mar-y-antonio.png"
+            alt="Mar et Antonio, accompagnement personnalisé chez Seguros Adeje, agent exclusif MAPFRE"
+            width="1536"
+            height="1024"
+            loading="eager"
+            fetchpriority="high"
+          />
+
+          <figcaption>
+            <strong>Mar y Antonio</strong>
+            <span>Conseils personnalisés · Agent exclusif MAPFRE</span>
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- ====================================================
+         OFICINA
+    ===================================================== -->
+
+      <!-- ====================================================
+     OFICINA Y VENTAJAS
+===================================================== -->
+
+      <section class="officeSection">
+        <div class="officeLayout">
+          <!-- TRES TARJETAS DE VENTAJAS -->
+          <div class="trustBar">
+            <div class="trustItem">
+              <strong>Devis</strong>
+              <span>Sans engagement</span>
+            </div>
+
+            <div class="trustItem">
+              <strong>Accompagnement personnalisé</strong>
+              <span>En espagnol et en anglais</span>
+            </div>
+
+            <div class="trustItem">
+              <strong>À vos côtés</strong>
+              <span>Gestion des contrats et des sinistres</span>
+            </div>
+          </div>
+
+          <!-- TARJETA DE OFICINA Y MAPA -->
+          <div class="officeCard">
+            <div class="officeInfo">
+              <strong class="officeTitle">Venez nous rencontrer</strong>
+
+              <p class="officeAddress">
+                Calle Grande, 56
+                <span>Centre d’Adeje</span>
+              </p>
+
+              <div class="officeHours">
+                <strong>Horaires d’ouverture</strong>
+                <p>
+                  Du lundi au jeudi
+                  <span>9:00–17:00</span>
+                </p>
+                <p>
+                  Vendredi
+                  <span>9:00–15:00</span>
+                </p>
+              </div>
+
+              <a
+                href="https://maps.google.com/?q=Calle+Grande+56+Adeje"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btnMapa"
+              >
+                Itinéraire
+              </a>
+            </div>
+
+            <div class="mapa">
+              <iframe
+                src="https://www.google.com/maps?q=Calle+Grande+56+Adeje&output=embed"
+                loading="lazy"
+                allowfullscreen
+                title="Emplacement de Seguros Adeje, Calle Grande 56"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================
+         PRODUCTOS
+    ===================================================== -->
+
+      <section class="products">
+        <div class="sectionHeader">
+          <p class="eyebrow">NOS ASSURANCES</p>
+
+          <h2>Que souhaitez-vous assurer ?</h2>
+        </div>
+
+        <div class="productGrid">
+          {products.map((product) => (
+            <article class="productCard">
+              <img src={product.icon} alt={product.title} class="productIcon" />
+
+              <h3>{product.title}</h3>
+
+              <p>{product.text}</p>
+
+              {product.internal ? (
+                <a href={product.href} class="productLink">
+                  {product.linkText}
+                </a>
+              ) : (
+                <a
+                  href={`https://wa.me/34646743707?text=${encodeURIComponent(
+                    `Bonjour, je souhaite obtenir des informations sur l’assurance ${product.title} auprès de MAPFRE Adeje - Calle Grande 56.`,
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="productLink"
+                >
+                  Demander un devis →
+                </a>
+              )}
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <!-- ====================================================
+         IDIOMAS
+    ===================================================== -->
+
+      <section class="languages">
+        <div class="languageContent">
+          <div>
+            <p class="eyebrow">SITE EN PLUSIEURS LANGUES</p>
+            <h2>Choisissez votre langue</h2>
+          </div>
+
+          <div class="languageGrid">
+            {languages.map((language) => (
+              <a href={language.href} class="languageCard">
+                <span class="languageInfo">
+                  <img
+                    src={language.flag}
+                    alt={language.label}
+                    class="languageFlag"
+                  />
+
+                  <span>{language.label}</span>
+                </span>
+
+                <strong>→</strong>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ======================================================
+       FOOTER
+  ======================================================= -->
+
+    <footer class="footer">
+      <div class="footerContent">
+        <p>© 2026 Seguros Adeje · Calle Grande 56. Tous droits réservés.</p>
+
+        <div class="footerSocial">
+          <a
+            href="https://www.facebook.com/people/Mapfre-Adeje-Calle-Grande/61574568760634/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook de Seguros Adeje"
+          >
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.45 2.89h-2.33v6.99A10 10 0 0 0 22 12Z" />
+            </svg>
+            <span>Facebook</span>
+          </a>
 
           <a
-            href={`https://wa.me/34646743707?text=${encodeURIComponent(
-              `Bonjour, je souhaite obtenir des informations sur l'assurance ${product.title} auprès de MAPFRE Adeje - Calle Grande 56.`
-            )}`}
+            href="https://www.instagram.com/mapfreadejeseguros"
             target="_blank"
-            class="productLink"
+            rel="noopener noreferrer"
+            aria-label="Instagram de Seguros Adeje"
           >
-            Demander un devis →
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <rect x="3" y="3" width="18" height="18" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle
+                cx="17.5"
+                cy="6.5"
+                r="1"
+                fill="currentColor"
+                stroke="none"
+              />
+            </svg>
+            <span>Instagram</span>
           </a>
-        </article>
-      ))}
-    </div>
-  </section>
-
-  <section class="languages">
-    <div class="languageContent">
-      <div>
-        <p class="eyebrow">Service multilingue</p>
-        <h2>Nous vous accompagnons dans votre langue</h2>
+        </div>
       </div>
 
-      <div class="languageGrid">
-        {languages.map((language) => (
-          <a href={language.href} class="languageCard">
-            <span class="languageInfo">
-              <img src={language.flag} alt={language.label} class="languageFlag" />
-              <span>{language.label}</span>
-            </span>
-            <strong>→</strong>
-          </a>
-        ))}
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer class="footer">
-  <div class="footerContent">
-
-    <p>
-      © 2026 Assurances Adeje · Calle Grande 56. Tous droits réservés.
-    </p>
-
-    <div class="footerSocial">
-      <a href="https://www.facebook.com/people/Mapfre-Adeje-Calle-Grande/61574568760634/" target="_blank">
-        Facebook
-      </a>
-
-      <a href="https://www.instagram.com/mapfreadejeseguros" target="_blank">
-        Instagram
-      </a>
-    </div>
-
-  </div>
-</footer>
-</body>
+      <p class="footerDisclaimer">
+        Site d’information. La souscription des assurances s’effectue par les
+        canaux mis à disposition par l’assureur.
+      </p>
+    </footer>
+  </body>
 </html>
 
 <style>
+  /* =========================================================
+        											   VARIABLES
+        											========================================================= */
+
   :root {
     --red: #e30613;
+
     --red-dark: #c90012;
+
     --muted: #65707c;
+
     --bg: #f5f5f5;
+
     --white: #ffffff;
+
     --line: #e9e9e9;
+
     --radius-md: 22px;
+
     --black: #1f2937;
+
     --text: #4b5563;
+
     --heading: #202938;
   }
 
@@ -204,14 +429,21 @@ const languages = [
 
   body {
     margin: 0;
+
     font-family: Arial, Helvetica, sans-serif;
+
     background: var(--bg);
+
     color: var(--black);
   }
 
   a {
     text-decoration: none;
   }
+
+  /* =========================================================
+        											   HEADER
+        											========================================================= */
 
   .siteHeader {
     min-height: 96px;
@@ -229,51 +461,55 @@ const languages = [
 
   .brand {
     display: flex;
-    align-items: center;
-    gap: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
     min-width: 0;
-    color: var(--black);
-    font-weight: 900;
+    color: var(--heading);
+    text-decoration: none;
   }
 
   .logoFrame {
     display: none;
   }
 
-  .brandText {
-    border-left: 1px solid #e7e7e7;
-    padding-left: 18px;
-    margin-left: 4px;
-    display: flex;
-    flex-direction: column;
-    line-height: 1.05;
-    white-space: nowrap;
-    font-weight: 900;
+  .brandName {
+    font-size: clamp(24px, 3vw, 30px);
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
   }
 
-  .brandText small {
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: .12em;
-    color: #9aa3af;
-    font-weight: 700;
+  .brandAddress {
+    color: var(--muted);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.4;
   }
 
   .languageSwitcher {
     display: flex;
+
     gap: 14px;
+
     margin-left: auto;
+
     margin-right: 24px;
   }
 
   .languageSwitcher a {
     color: #374151;
+
     font-weight: 700;
   }
 
   .languageSwitcher a.active {
     color: var(--red);
   }
+
+  /* =========================================================
+        											   BOTONES
+        											========================================================= */
 
   .headerActions,
   .heroActions {
@@ -292,32 +528,40 @@ const languages = [
     justify-content: center;
     font-weight: 900;
     font-size: 14px;
-    transition: all .2s ease;
+    transition: all 0.2s ease;
   }
 
   .button.large {
     min-height: 58px;
+
     padding: 0 30px;
+
     font-size: 15px;
   }
 
   .primary,
   .cta {
     background: var(--red);
+
     color: white;
+
     border: 2px solid var(--red);
+
     box-shadow: 0 14px 30px rgba(227, 6, 19, 0.2);
   }
 
   .primary:hover,
   .cta:hover {
     background: var(--red-dark);
+
     border-color: var(--red-dark);
   }
 
   .secondary {
     background: white;
+
     color: var(--red);
+
     border: 2px solid var(--red);
   }
 
@@ -325,25 +569,31 @@ const languages = [
     background: #fff5f5;
   }
 
+  /* =========================================================
+        											   HERO
+        											========================================================= */
+
   .hero {
     min-height: auto;
-    padding: 50px clamp(32px, 7vw, 96px) 90px;
-    display: block;
+    padding: 50px clamp(32px, 7vw, 96px) 32px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: center;
+    gap: 48px;
   }
 
   .hero h1 {
     margin: 0;
-    max-width: 900px;
-    font-size: clamp(48px, 6vw, 80px);
-    line-height: 0.95;
+    font-size: clamp(48px, 5vw, 72px);
+    line-height: 1;
     letter-spacing: -0.055em;
     color: var(--heading);
   }
 
   .heroContent {
-    max-width:  none;
+    min-width: 0;
     width: 100%;
- }
+  }
 
   .eyebrow {
     margin: 0 0 16px;
@@ -372,6 +622,38 @@ const languages = [
 
   .heroActions {
     margin-top: 36px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .heroPortrait {
+    min-width: 0;
+    width: 100%;
+    max-width: 640px;
+    margin: 0;
+    justify-self: center;
+  }
+
+  .heroPortrait img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+
+  .heroPortrait figcaption {
+    display: grid;
+    gap: 4px;
+    margin-top: 14px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 15px;
+  }
+
+  .heroPortrait figcaption strong {
+    color: var(--heading);
+    font-size: 18px;
   }
 
   .heroImage,
@@ -386,12 +668,47 @@ const languages = [
     display: none !important;
   }
 
+  @media (max-width: 900px) {
+    .hero {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 32px;
+      padding: 32px 24px 48px;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 10vw, 64px);
+    }
+
+    .heroActions {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .heroActions .button {
+      box-sizing: border-box;
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+    }
+
+    .products {
+      padding-top: 16px;
+    }
+  }
+
+  /* =========================================================
+        											   PRODUCTOS
+        											========================================================= */
+
   .products {
     padding: 40px clamp(24px, 6vw, 88px) 50px;
   }
-  
+
   .languages {
-    padding: 40px clamp(24px, 6vw, 88px) 80px;
+    padding: 40px clamp(24px, 6vw, 88px);
   }
 
   .sectionHeader {
@@ -400,26 +717,42 @@ const languages = [
 
   .productGrid {
     margin-top: 42px;
+
     display: grid;
+
     grid-template-columns: repeat(4, minmax(0, 1fr));
+
     gap: 22px;
   }
 
   .productCard {
     min-height: 255px;
+
     background: #ffffff;
+
     border: 1px solid #e5e7eb;
+
     border-radius: 26px;
+
     padding: 34px 28px;
+
     display: flex;
+
     flex-direction: column;
-    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+
+    transition:
+      transform 0.25s ease,
+      border-color 0.25s ease,
+      box-shadow 0.25s ease;
+
     cursor: pointer;
   }
 
   .productCard:hover {
     transform: translateY(-4px);
+
     border-color: var(--red);
+
     box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
   }
 
@@ -429,83 +762,189 @@ const languages = [
 
   .productIcon {
     width: 56px;
+
     height: 56px;
+
     margin-bottom: 24px;
+
     display: block;
+
     transition: transform 0.25s ease;
+
     color: var(--red);
   }
 
   .productCard h3 {
     margin: 0 0 14px;
+
     font-size: 24px;
+
     font-weight: 900;
+
     color: var(--heading);
   }
 
   .productCard p {
     margin: 0;
+
     color: var(--muted);
+
     font-size: 16px;
+
     line-height: 1.5;
+
     font-weight: 600;
   }
 
   .productLink {
     display: inline-block;
+
     margin-top: auto;
+
     padding-top: 24px;
+
     color: var(--red);
+
     font-weight: 900;
+
     font-size: 17px;
+
     text-decoration: none;
+
     transition: all 0.2s ease;
   }
 
   .productLink:hover {
     color: var(--red-dark);
+
     transform: translateX(4px);
   }
 
   .trust > p {
     margin: 0;
+
     color: var(--muted);
+
     font-size: clamp(18px, 2vw, 22px);
+
     line-height: 1.7;
   }
 
+  /* =========================================================
+        											   OFICINA
+        											========================================================= */
+
+  /* =========================================
+           SECCIÓN OFICINA
+        ========================================= */
+
   .officeSection {
-    padding: 0 clamp(24px, 6vw, 88px) 70px;
-    padding-top: 8px;
+    padding: 0 clamp(24px, 6vw, 88px) 40px;
     background: #f4f5f7;
   }
 
-  .trustBar {
-  max-width: 980px;
-  margin: 0 auto 20px;
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  gap: 24px;
-}
+  .officeLayout .trustBar {
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+  }
 
-  .trustBar span {
-  white-space: nowrap;
-}
+  /* =========================================
+           DISTRIBUCIÓN GENERAL
+        ========================================= */
+
+  .officeLayout {
+    max-width: 1320px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: minmax(260px, 1fr) minmax(0, 2.5fr);
+    gap: 24px;
+    align-items: stretch;
+  }
+
+  /* =========================================
+           TRES TARJETAS DE VENTAJAS
+        ========================================= */
+
+  .trustBar {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+
+    max-width: none;
+    margin: 0;
+    padding: 0;
+
+    background: transparent;
+    border: none;
+    border-radius: 0;
+  }
+
+  .trustItem {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    gap: 6px;
+    min-width: 0;
+    position: relative;
+    padding: 20px 24px 20px 32px;
+    background: #ffffff;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+  }
+
+  .trustItem strong {
+    color: #172b45;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  .trustItem span {
+    color: var(--muted);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    white-space: normal;
+  }
+
+  .trustItem::before {
+    content: "";
+    position: absolute;
+    left: 12px;
+    top: 25%;
+    height: 50%;
+    width: 3px;
+    background: var(--red);
+    border-radius: 3px;
+  }
+
+  /* =========================================
+           TARJETA DE OFICINA
+        ========================================= */
 
   .officeCard {
-    max-width: 980px;
-    margin: 0 auto;
-    background: white;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+
+    background: #ffffff;
     border: 1px solid var(--line);
     border-radius: 22px;
-    padding: 18px;
+    padding: 24px;
+
     display: grid;
-    grid-template-columns: 240px 1fr;
-    gap: 20px;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+    gap: 32px;
     align-items: center;
-    box-shadow: 0 14px 35px rgba(0,0,0,0.06);
+
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.06);
   }
+
+  /* INFORMACIÓN DE LA OFICINA */
 
   .officeInfo {
     display: flex;
@@ -525,11 +964,17 @@ const languages = [
     line-height: 1.35;
   }
 
+  /* =========================================
+           MAPA GOOGLE
+        ========================================= */
+
   .mapa {
     margin-top: 0;
+    min-width: 0;
   }
 
   .mapa iframe {
+    display: block;
     width: 100%;
     height: 250px;
     border: 0;
@@ -537,12 +982,18 @@ const languages = [
     box-shadow: none;
   }
 
+  /* =========================================
+           BOTÓN CÓMO LLEGAR
+        ========================================= */
+
   .btnMapa {
     width: fit-content;
     margin-top: 8px;
     padding: 12px 22px;
+
     background: var(--red);
-    color: white;
+    color: #ffffff;
+
     border-radius: 10px;
     font-weight: 800;
   }
@@ -551,52 +1002,146 @@ const languages = [
     background: var(--red-dark);
   }
 
+  /* =========================================
+           TABLETS
+        ========================================= */
+
+  @media (max-width: 1100px) {
+    .officeLayout .trustBar {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-rows: auto;
+      align-items: stretch;
+      gap: 16px;
+    }
+    .officeLayout .trustItem {
+      height: 100%;
+      box-sizing: border-box;
+    }
+
+    .trustBar {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-rows: auto;
+    }
+
+    .trustItem {
+      padding: 18px;
+    }
+  }
+
+  /* =========================================
+           MÓVILES
+        ========================================= */
+
+  @media (max-width: 620px) {
+    .officeSection {
+      padding: 0 16px 24px;
+    }
+
+    .officeLayout {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    .trustBar {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      gap: 12px;
+    }
+
+    .trustItem {
+      padding: 16px 20px;
+    }
+
+    .officeCard {
+      grid-template-columns: 1fr;
+      gap: 16px;
+      padding: 20px;
+    }
+
+    .mapa iframe {
+      height: 240px;
+    }
+  }
+
+  /* =========================================================
+        											   IDIOMAS
+        											========================================================= */
+
   .languageContent {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(280px, 0.45fr);
+
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(280px, 0.45fr);
+
     gap: clamp(32px, 6vw, 80px);
+
     align-items: center;
   }
 
   .languageText {
     margin-top: 0;
+
     max-width: 680px;
+
     color: var(--muted);
+
     font-size: clamp(18px, 2vw, 22px);
+
     line-height: 1.6;
   }
 
   .languageGrid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+
+    grid-template-columns:
+      1fr
+      1fr;
+
     gap: 16px;
   }
 
   .languageCard {
     min-width: 180px;
+
     background: white;
+
     border: 1px solid var(--line);
+
     color: var(--black);
+
     border-radius: 999px;
+
     padding: 14px 18px;
+
     display: inline-flex;
+
     align-items: center;
+
     justify-content: space-between;
+
     gap: 14px;
+
     font-weight: 900;
   }
 
   .languageInfo {
     display: inline-flex;
+
     align-items: center;
+
     gap: 10px;
   }
 
   .languageFlag {
     width: 28px;
+
     height: 20px;
+
     object-fit: cover;
+
     border-radius: 4px;
+
     display: block;
   }
 
@@ -606,13 +1151,26 @@ const languages = [
 
   .languageCard:hover {
     border-color: var(--red);
+
     color: var(--red);
   }
 
+  .languages .languageContent {
+    gap: 20px;
+  }
+
+  .languages .languageGrid {
+    margin-top: 0;
+  }
+
+  /* =========================================================
+        											   FOOTER
+        											========================================================= */
+
   .footer {
     background: #e30613;
-    padding: 30px 0;
-    margin-top: 80px;
+    padding: 26px 0 22px;
+    margin-top: 0;
   }
 
   .footerContent {
@@ -623,97 +1181,156 @@ const languages = [
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 24px;
   }
 
   .footer p {
     margin: 0;
-    color: white;
-    font-size: 14px;
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 1.5;
   }
 
   .footerSocial {
     display: flex;
-    gap: 24px;
+    align-items: center;
+    gap: 20px;
+    flex-shrink: 0;
   }
 
   .footerSocial a {
-    color: white;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #ffffff;
     text-decoration: none;
-    font-weight: 700;
+    font-size: 13px;
+    font-weight: 600;
+    transition: opacity 0.2s ease;
   }
 
   .footerSocial a:hover {
     opacity: 0.8;
   }
 
-  @media (max-width: 1400px) {
-  .hero h1 {
-    max-width: 780px;
-    font-size: clamp(46px, 5.5vw, 72px);
+  .footerSocial svg {
+    width: 20px;
+    height: 20px;
   }
 
-  .heroContent {
-    max-width: 820px;
+  .footer .footerDisclaimer {
+    max-width: 1152px;
+    margin: 12px auto 0;
+    padding: 12px 0 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: center;
   }
-}
+
+  @media (max-width: 768px) {
+    .footer {
+      padding: 24px 0;
+    }
+
+    .footerContent {
+      flex-direction: column;
+      text-align: center;
+      gap: 14px;
+    }
+
+    .footer .footerDisclaimer {
+      margin: 16px 24px 0;
+      padding-top: 14px;
+    }
+  }
+
+  /* =========================================================
+        											   RESPONSIVE
+        											========================================================= */
+
+  @media (max-width: 1400px) {
+    .hero h1 {
+      max-width: 780px;
+
+      font-size: clamp(46px, 5.5vw, 72px);
+    }
+
+    .heroContent {
+      max-width: 820px;
+    }
+  }
 
   @media (min-width: 981px) and (max-width: 1500px) {
-  .hero h1 {
-    max-width: 760px;
-    font-size: clamp(46px, 5vw, 68px);
+    .hero h1 {
+      max-width: 760px;
+
+      font-size: clamp(46px, 5vw, 68px);
+    }
+
+    .lead {
+      max-width: 620px;
+    }
+
+    .hero {
+      padding-left: clamp(32px, 6vw, 76px);
+
+      padding-right: clamp(32px, 6vw, 76px);
+    }
+
+    .trustBar {
+      display: flex;
+
+      justify-content: center;
+
+      align-items: center;
+
+      flex-wrap: wrap;
+
+      gap: 24px;
+
+      text-align: center;
+    }
   }
 
-  .lead {
-    max-width: 620px;
-  }
-
-  .hero {
-    padding-left: clamp(32px, 6vw, 76px);
-    padding-right: clamp(32px, 6vw, 76px);
-  }
-
-  .trustBar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 24px;
-  text-align: center;
-  }
-}
-
-  @media (max-width: 980px) {
+  @media (min-width: 621px) and (max-width: 980px) {
     .siteHeader {
       height: auto;
       padding-top: 18px;
       padding-bottom: 18px;
-      align-items: flex-start;
-      flex-direction: column;
+
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
     }
 
     .languageSwitcher {
-      margin-left: 0;
+      margin-left: auto;
       margin-right: 0;
+      flex-shrink: 0;
     }
+  }
 
-    .trust,
-    .languageContent {
-      grid-template-columns: 1fr;
-    }
+  .trust,
+  .languageContent {
+    grid-template-columns: 1fr;
+  }
 
-    .productGrid {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
+  .productGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 
-    .languageGrid {
-      margin-top: 28px;
-    }
+  .languageGrid {
+    margin-top: 28px;
+  }
 
-    .trustBar {
-      justify-content: center;
-      text-align: center;
-      gap: 16px;
-    }
+  .trustBar {
+    justify-content: center;
+    text-align: center;
+    gap: 16px;
   }
 
   @media (max-width: 768px) {
@@ -722,10 +1339,13 @@ const languages = [
     }
 
     .trustBar {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 10px;
+      flex-direction: column;
+
+      align-items: center;
+
+      text-align: center;
+
+      gap: 10px;
     }
 
     .mapa iframe {
@@ -740,18 +1360,22 @@ const languages = [
 
     .brandText {
       font-size: 15px;
+
       white-space: normal;
     }
 
     .hero {
       padding-top: 24px;
+
       padding-bottom: 24px;
     }
 
     .headerActions,
     .heroActions {
       width: 100%;
+
       flex-direction: column;
+
       align-items: stretch;
     }
 
@@ -768,19 +1392,28 @@ const languages = [
       grid-template-columns: 1fr;
     }
 
-    .languageSwitcher{
+    .languageSwitcher {
       width: 100%;
+
       justify-content: center;
     }
-    
+
     .heroActions {
-      display: none;
+      display: flex;
     }
+
     .trustBar {
-      text-align: center;
-      align-items: center;
-      gap: 2px;
-      margin: 0 auto 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+      gap: 12px;
+      margin: 0 auto 20px;
+    }
+
+    .trustBar p {
+      margin: 0;
+      line-height: 1.5;
     }
 
     .lead {
@@ -788,34 +1421,368 @@ const languages = [
     }
 
     .officeSection {
-      padding-bottom: 10px;
+      padding: 0 clamp(24px, 6vw, 88px) 60px;
+      padding-top: 0;
+      background: #f4f5f7;
     }
 
     .products {
-      padding-top: 28px;
+      padding-top: 8px;
     }
 
     .footerContent {
-    flex-direction: column;
-    gap: 16px;
-    text-align: center;
+      flex-direction: column;
+
+      gap: 16px;
+
+      text-align: center;
+    }
   }
 
   @media (min-width: 1200px) and (max-width: 1600px) {
-  .hero h1 {
-    max-width: 640px;
-    font-size: clamp(44px, 4.2vw, 62px);
+    .hero h1 {
+      max-width: 640px;
+
+      font-size: clamp(44px, 4.2vw, 62px);
+    }
+
+    .lead {
+      max-width: 560px;
+    }
+
+    .heroActions {
+      max-width: 640px;
+    }
   }
 
-  .lead {
-    max-width: 560px;
+  @media (max-width: 620px) {
+    .siteHeader {
+      position: static;
+      min-height: auto;
+      padding: 16px 24px;
+      gap: 14px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .languageSwitcher {
+      width: 100%;
+      margin: 0;
+      justify-content: flex-start;
+      gap: 14px;
+    }
   }
 
-  .heroActions {
-    max-width: 640px;
+  @media (max-width: 620px) {
+    .officeCard {
+      grid-template-columns: minmax(0, 1fr);
+      padding: 20px;
+      gap: 20px;
+    }
   }
-}
 
-}
+  .officeSection .trustBar {
+    max-width: 980px;
+    margin: 0 auto 24px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    text-align: left;
+    align-items: start;
+  }
+
+  .officeSection .trustBar p {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: var(--heading);
+  }
+
+  .officeSection .trustBar p span {
+    flex-shrink: 0;
+    color: var(--red);
+    font-weight: 900;
+  }
+
+  @media (max-width: 620px) {
+    .officeSection .trustBar {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 12px;
+    }
+  }
+
+  .officeCard .officeInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 14px;
+  }
+
+  .officeCard .officeHours {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 6px;
+  }
+
+  .officeCard .officeHours strong {
+    font-size: 15px;
+    color: var(--heading);
+  }
+
+  .officeCard .btnMapa {
+    align-self: center;
+  }
+
+  @media (max-width: 620px) {
+    .productGrid {
+      margin-top: 24px;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 14px;
+    }
+
+    .productCard {
+      min-height: auto;
+      padding: 22px;
+      border-radius: 20px;
+    }
+
+    .productIcon {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 12px;
+    }
+
+    .productCard h3 {
+      margin-bottom: 8px;
+      font-size: 22px;
+    }
+
+    .productCard p {
+      font-size: 16px;
+      line-height: 1.4;
+    }
+
+    .productLink {
+      margin-top: 16px;
+      padding-top: 0;
+      font-size: 16px;
+    }
+  }
+
+  .footerSocial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .footerSocial a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .footerSocial svg {
+    display: block;
+    flex-shrink: 0;
+  }
+
+  .footerSocial a:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+
+  .officeCard .officeInfo {
+    align-items: flex-start;
+    text-align: left;
+    gap: 20px;
+    padding: 8px;
+  }
+
+  .officeCard .officeTitle {
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.025em;
+    color: var(--heading);
+  }
+
+  .officeCard .officeAddress {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: var(--heading);
+  }
+
+  .officeCard .officeAddress span {
+    display: block;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--muted);
+  }
+
+  .officeCard .officeHours {
+    align-self: stretch;
+    margin: 0;
+    gap: 8px;
+  }
+
+  .officeCard .officeHours strong {
+    margin-bottom: 2px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--heading);
+  }
+
+  .officeCard .officeHours p {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 4px 16px;
+    margin: 0;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--muted);
+  }
+
+  .officeCard .officeHours p span {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--heading);
+    white-space: nowrap;
+  }
+
+  .officeCard .btnMapa {
+    align-self: flex-start;
+    margin-top: 0;
+  }
+
+  /* CORRECCIÓN DE DISTRIBUCIÓN DE OFICINA */
+
+  .officeLayout {
+    display: grid;
+    grid-template-columns: 320px minmax(0, 1fr);
+    gap: 24px;
+    align-items: stretch;
+    max-width: 1320px;
+    margin: 0 auto;
+  }
+
+  .officeLayout .trustBar {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .officeLayout .trustItem {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 20px 24px;
+  }
+
+  .officeLayout .officeCard {
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+    margin: 0;
+    align-self: stretch;
+  }
+
+  /* =========================================
+           TABLETS
+        ========================================= */
+
+  @media (max-width: 1100px) {
+    .officeLayout {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+
+    /* Tres tarjetas en horizontal */
+
+    .officeLayout .trustBar {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-rows: auto;
+      gap: 16px;
+    }
+
+    .trustItem {
+      padding: 18px 24px 18px 32px;
+    }
+
+    /* Oficina y mapa en dos columnas */
+
+    .officeCard {
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr);
+      gap: 24px;
+    }
+
+    .officeInfo {
+      min-width: 0;
+    }
+  }
+
+  /* =========================================
+           MÓVILES
+        ========================================= */
+
+  @media (max-width: 700px) {
+    .officeLayout {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    /* Tres tarjetas verticales */
+
+    .officeLayout .trustBar {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      gap: 12px;
+    }
+
+    .trustItem {
+      padding: 18px 24px 18px 32px;
+    }
+
+    /* Oficina encima del mapa */
+
+    .officeCard {
+      grid-template-columns: 1fr;
+      gap: 16px;
+      padding: 20px;
+    }
+
+    .mapa {
+      width: 100%;
+    }
+
+    .mapa iframe {
+      width: 100%;
+      height: 250px;
+    }
+  }
+
+  @media (max-width: 620px) {
+    .products {
+      padding-top: 8px;
+    }
+  }
 </style>
-
